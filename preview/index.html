@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vorschau – Profil-Assets</title>
+<style>
+  body { margin: 0; padding: 24px; font: 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+         background: #6e7681; color: #fff; }
+  h1 { font-size: 18px; margin: 0 0 24px; }
+  h2 { font-size: 16px; margin: 40px 0 12px; }
+  .row { display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start; padding: 16px; margin-bottom: 12px; }
+  .dark { background: #0d1117; color: #e6edf3; }
+  .light { background: #ffffff; color: #1f2328; }
+  .auto { background: #ffffff; color: #1f2328; }
+  @media (prefers-color-scheme: dark) { .auto { background: #0d1117; color: #e6edf3; } }
+  figure { margin: 0; }
+  figcaption { margin-bottom: 6px; opacity: .7; }
+  img { display: block; max-width: 100%; height: auto; }
+</style>
+</head>
+<body>
+<h1>Profil-Assets – Vorschau</h1>
+<h2>phase0-test</h2>
+<div class="row dark"><figure style="width:900px"><figcaption>dark · 900px</figcaption><img src="../assets/phase0-test-dark.svg" width="900" alt="phase0-test (dark)"></figure><figure style="width:400px"><figcaption>dark · 400px</figcaption><img src="../assets/phase0-test-dark.svg" width="400" alt="phase0-test (dark)"></figure></div>
+<div class="row light"><figure style="width:900px"><figcaption>light · 900px</figcaption><img src="../assets/phase0-test-light.svg" width="900" alt="phase0-test (light)"></figure><figure style="width:400px"><figcaption>light · 400px</figcaption><img src="../assets/phase0-test-light.svg" width="400" alt="phase0-test (light)"></figure></div>
+<div class="row auto"><figure style="width:900px"><figcaption>auto (System-Theme) · 900px</figcaption><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/phase0-test-dark.svg"><source media="(prefers-color-scheme: light)" srcset="../assets/phase0-test-light.svg"><img src="../assets/phase0-test-dark.svg" width="900" alt="phase0-test (auto)"></picture></figure><figure style="width:400px"><figcaption>auto (System-Theme) · 400px</figcaption><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/phase0-test-dark.svg"><source media="(prefers-color-scheme: light)" srcset="../assets/phase0-test-light.svg"><img src="../assets/phase0-test-dark.svg" width="400" alt="phase0-test (auto)"></picture></figure></div>
+</body>
+</html>

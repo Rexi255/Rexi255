@@ -10,7 +10,8 @@ Ablauf:
   3. Für jedes Theme (dark, light) rendern und nach
      assets/<name>-<theme>.svg schreiben.
   4. Generierte SVGs ohne zugehöriges Template entfernen.
-  5. Prüfskript laufen lassen. Exit-Code != 0, wenn etwas verletzt ist.
+  5. preview/index.html neu erzeugen.
+  6. Prüfskript laufen lassen. Exit-Code != 0, wenn etwas verletzt ist.
 
 Nur Python-Standardbibliothek.
 """
@@ -21,6 +22,7 @@ import sys
 from pathlib import Path
 
 import check
+import preview
 from svglib import Tokens
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -65,6 +67,8 @@ def build_assets():
 def main():
     print("Assets:")
     build_assets()
+    print("Vorschau:")
+    preview.build()
     print("Prüfung:")
     return check.main([])
 
