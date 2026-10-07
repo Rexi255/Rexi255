@@ -11,16 +11,23 @@ Unter jeder Phase steht ein **Prompt**, den ich in Claude Code einfügen kann.
 
 **Ziel:** Repo-Struktur, Designsystem und Vorschau stehen. Noch keine echte Grafik.
 
-- [ ] Profil-Repo angelegt (Name = Username, public), lokal geklont
-- [ ] `CLAUDE.md` und `PLAN.md` liegen im Repo, `<GITHUB_USERNAME>` ersetzt
-- [ ] Ordnerstruktur laut `CLAUDE.md` angelegt
-- [ ] `src/design/tokens.json` mit Farben, Timings, Raster und Skill-Liste
-- [ ] Generator-Grundgerüst: ein Befehl, der alle Templates in `assets/` rendert
-- [ ] Prüfskript: XML-Validität, Größenbudget, verbotene Elemente
-- [ ] Vorschauseite in `preview/`: alle Assets in Dark und Light, bei 900 px und 400 px
-- [ ] Headless-Screenshot-Prüfung funktioniert (oder dokumentiert, warum nicht)
+- [x] Profil-Repo angelegt (Name = Username, public), lokal geklont *(public bestätigt; lokalen Klon auf deinem Rechner kann ich nicht prüfen)*
+- [x] `CLAUDE.md` und `PLAN.md` liegen im Repo, `<GITHUB_USERNAME>` ersetzt
+- [x] Ordnerstruktur laut `CLAUDE.md` angelegt
+- [x] `src/design/tokens.json` mit Farben, Timings, Raster und Skill-Liste
+- [x] Generator-Grundgerüst: ein Befehl, der alle Templates in `assets/` rendert
+- [x] Prüfskript: XML-Validität, Größenbudget, verbotene Elemente
+- [x] Vorschauseite in `preview/`: alle Assets in Dark und Light, bei 900 px und 400 px
+- [x] Headless-Screenshot-Prüfung funktioniert (oder dokumentiert, warum nicht)
 
-**Ergebnis:** Ein Test-SVG (einfaches isometrisches Rechteck in Akzentfarbe) läuft durch Generator, Prüfung und Vorschau.
+**Ergebnis:** Ein Test-SVG (einfaches isometrisches Rechteck in Akzentfarbe) läuft durch Generator, Prüfung und Vorschau. ✅ (`phase0-test`)
+
+**Befehle:**
+- `python3 scripts/build.py` – Templates → `assets/`, Vorschau neu erzeugen, Prüfung (Exit ≠ 0 bei Verstoß)
+- `python3 scripts/check.py` – nur Prüfung
+- `python3 scripts/screenshot.py [--at MS] [--reduced-motion] [--only NAME]` – Screenshots nach `preview/shots/`
+
+**Hinweis Headless:** Screenshots laufen über `chrome-headless-shell` (klassischer Headless-Modus). Normales Chrome im neuen Headless-Modus schneidet ca. 88 px ab und lässt Animationen nicht vorlaufen. SMIL-Animationen sind gesperrt, weil `prefers-reduced-motion` sie nicht stoppen kann – nur CSS-Animationen.
 
 > **Prompt:** „Lies CLAUDE.md und PLAN.md. Setze Phase 0 um. Erkläre mir jeden Befehl Zeile für Zeile. Am Ende zeig mir einen Screenshot des Test-SVGs in Dark und Light.“
 
