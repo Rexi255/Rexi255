@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="900" height="360" role="img" aria-label="Testgrafik: isometrischer Quader in Akzentfarbe auf einem Bodenraster">
+<style>
+text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; font-size: 24px; fill: #6B6385; }
+.floor { animation: fade 0.4s cubic-bezier(0.65, 0, 0.35, 1) backwards; }
+.box { animation: rise 1.2s cubic-bezier(0.65, 0, 0.35, 1) 0.4s backwards; }
+.edge { animation: pulse 10s cubic-bezier(0.65, 0, 0.35, 1) 4s infinite; }
+.led { animation: blink 8s steps(1) 4s infinite; }
+@keyframes fade { from { opacity: 0; } }
+@keyframes rise { from { opacity: 0; transform: translateY(24px); } }
+@keyframes pulse { 50% { opacity: 0.35; } }
+@keyframes blink { 92% { opacity: 0.2; } 96% { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+</style>
+<rect width="900" height="360" fill="#FAF8FF"/>
+<path class="floor" d="M450 104L283.72 200M450 104L616.28 200M470.78 116L304.51 212M429.22 116L595.49 212M491.57 128L325.29 224M408.43 128L574.71 224M512.35 140L346.08 236M387.65 140L553.92 236M533.14 152L366.86 248M366.86 152L533.14 248M553.92 164L387.65 260M346.08 164L512.35 260M574.71 176L408.43 272M325.29 176L491.57 272M595.49 188L429.22 284M304.51 188L470.78 284M616.28 200L450 296M283.72 200L450 296" fill="none" stroke="#DDD2F2" stroke-width="1"/>
+<g class="box">
+<polygon points="366.86,200 450,248 450,200 366.86,152" fill="#7C3AED" fill-opacity="0.6"/>
+<polygon points="533.14,200 450,248 450,200 533.14,152" fill="#7C3AED" fill-opacity="0.35"/>
+<polygon points="450,104 533.14,152 450,200 366.86,152" fill="#7C3AED"/>
+<polygon class="edge" points="450,104 533.14,152 450,200 366.86,152" fill="none" stroke="#A78BFA" stroke-width="2"/>
+<circle class="led" cx="517.55" cy="185" r="4" fill="#15803D"/>
+</g>
+<text x="24" y="48">phase-0 render test · light</text>
+</svg>
