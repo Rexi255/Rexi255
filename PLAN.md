@@ -132,13 +132,20 @@ Unter jeder Phase steht ein **Prompt**, den ich in Claude Code einfügen kann.
 
 ## Phase 6 – Qualitätssicherung
 
-- [ ] Alle Komponenten erfüllen die Definition of Done aus `CLAUDE.md`
-- [ ] Gesamtgröße aller Assets ≤ 1 MB
+- [x] Alle Komponenten erfüllen die Definition of Done aus `CLAUDE.md`
+  - hero, stack, skyline, footer: Dark/Light, reduced motion, Budget, keine verbotenen Elemente, lesbar bei 400 px, Screenshots geprüft, in README mit Alt-Text ✅
+- [x] Gesamtgröße aller Assets ≤ 1 MB
+  - aktuell ca. 112 KB
 - [ ] Getestet: Chrome, Firefox, Safari, GitHub-Mobile-App, Light und Dark Mode
-- [ ] Mit reduzierter Bewegung (Systemeinstellung) angeschaut
+  - Chromium Dark + Light ✅ (Cloud-Umgebung). **Offen für dich:** Firefox, Safari, GitHub-Mobile-App
+- [x] Mit reduzierter Bewegung (Systemeinstellung) angeschaut
+  - per Browser-Emulation geprüft; echte Systemeinstellung bitte einmal selbst testen
 - [ ] Ladezeit des Profils subjektiv okay, nichts „springt“
-- [ ] Rechtschreibung in allen sichtbaren Texten geprüft
-- [ ] Keine persönlichen Daten, die ich nicht freigegeben habe
+  - **Offen für dich** (subjektiv). Technisch: 4 SVGs, zusammen ca. 112 KB, keine externen Ressourcen
+- [x] Rechtschreibung in allen sichtbaren Texten geprüft
+  - geprüft ✅ – bewusster Sprachmix: Terminal-Elemente englisch (`status.sh`, `contributions`), Inhalte deutsch
+- [x] Keine persönlichen Daten, die ich nicht freigegeben habe
+  - nur freigegebene Angaben (Name, Rolle, Bereiche, Projekte, since 2025); Dateien und Commit-Messages auf Produkt-/Markennamen durchsucht ✅
 
 > **Prompt:** „Phase 6: Führe die komplette QA-Checkliste aus PLAN.md durch und gib mir einen Bericht mit allem, was noch nicht passt.“
 
@@ -147,9 +154,13 @@ Unter jeder Phase steht ein **Prompt**, den ich in Claude Code einfügen kann.
 ## Phase 7 – Launch & Feinschliff
 
 - [ ] Beste Repos auf dem Profil pinnen
+  - **Offen für dich:** Profil → „Customize your pins“
 - [ ] Profilbild und Bio passend zum Look (Bio kurz, gleiche Tonalität)
+  - **Offen für dich**
 - [ ] Social-Preview-Bild für das Profil-Repo (statischer Screenshot vom Hero)
+  - Bild liegt in `preview/social-preview.png` (1280×640). **Offen für dich:** Repo → Settings → General → Social preview → Upload
 - [ ] Vorher/Nachher-Screenshot für mich archivieren
+  - **Offen für dich** (aus der Cloud-Umgebung lädt GitHub ohne Styles). Vorher-Stand: Commit `62c76d7`
 
 ---
 
