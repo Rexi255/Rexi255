@@ -49,9 +49,9 @@ Dunkel, präzise, technisch. Eine Akzentfarbe, Monospace-Typo, isometrische Pers
 
 Aufbau der README von oben nach unten:
 
-1. **Hero** – isometrisches Server-Rack / Netzwerktopologie, Datenpakete fließen zwischen Knoten, Name erscheint per Boot-Sequenz.
-2. **Stack-Rack** – Skills als Rack-Einschübe mit Status-LEDs, gruppiert nach Bereich.
-3. **Kurzer Text-Block** – 2–4 Sätze über mich, echtes Markdown (lesbar, durchsuchbar).
+1. **whoami-Karte (Hero)** – eine Grafik: links Name (Boot-Sequenz), Rolle, Kurztext und Bereiche mit Status-LEDs, rechts ein isometrisches Server-Rack, dessen Einschübe zu den Bereichen gehören. Keine Netzwerk-Topologie mit abknickenden Leitungen (wirkte wie ein Hakenkreuz).
+2. **Tools** – freigegebene Tools als Logos auf isometrischen Sockeln.
+3. **Projekte** – Projektkarten, zwei nebeneinander.
 4. **Featured Projects** – über GitHubs gepinnte Repos, plus optional kurze Liste.
 5. **Live-Skyline** – Contribution-Daten als isometrische 3D-Skyline, täglich generiert.
 6. **Terminal-Footer** – kleines Terminalfenster mit Live-Werten (z. B. Last update, Commits diese Woche, Uptime-Gag).
@@ -91,13 +91,13 @@ Regel: **Lila dominiert.** `accent-glow` nur als Leuchtkern von Akzent-Elementen
 - Einheitliches Raster (Basiseinheit in `tokens.json`).
 - Feste Breite im `viewBox`: **900 px** für alle Haupt-Grafiken, damit sie bündig untereinander stehen.
 - Ausnahme: Projektkarten (`project-*`) sind **440 px** breit und stehen zu zweit nebeneinander.
-- Jede Grafik ist eine Karte: abgerundeter Rahmen (`canvas.radius`), kompakte Höhe (ca. 220–320 px).
+- Jede Grafik ist eine Karte: abgerundeter Rahmen (`canvas.radius`), kompakte Höhe (ca. 220–320 px). Ausnahme: die whoami-Karte (Hero) fasst drei Abschnitte zusammen und darf bis ca. 600 px hoch sein.
 
 ### Animation
 
 - Timings als Tokens: `fast` 0,4 s · `base` 1,2 s · `slow` 4 s · `ambient` 8–12 s.
 - **Gestaffelt**, nie alles gleichzeitig. Maximal 2–3 Dinge gleichzeitig in Bewegung im sichtbaren Bereich.
-- Hero: Boot-Sequenz läuft einmal (ca. 3–4 s), danach nur ruhige Ambient-Loops (LED-Blinken, fließende Pakete).
+- Hero: Boot-Sequenz läuft einmal (ca. 3–4 s), danach nur ruhige Ambient-Loops (LED-Blinken).
 - Easing weich (`ease-in-out` oder eigene cubic-bezier), keine harten Sprünge außer bewusst beim „Glitch“/Boot.
 - Jedes SVG enthält einen `prefers-reduced-motion`-Block, der Animationen stoppt und den **Endzustand** statisch zeigt.
 

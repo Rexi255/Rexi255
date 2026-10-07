@@ -197,3 +197,12 @@ Vorbild: Struktur des Profils eines Kollegen (einheitliche Karten, kompakte Höh
 - [x] Skyline als isometrischer Häuserblock (13 × 4), Footer als Terminal-Karte in zwei Spalten
 - [x] README mit `##`-Abschnitten im Terminal-Stil, aus `src/readme.md` generiert
 - [ ] Alten Branch `claude/festive-faraday-sq3pz0` löschen – **offen für dich** (Proxy der Cloud-Umgebung blockiert Branch-Löschungen): Repo → Branches → Mülleimer
+
+## whoami-Karte (nach Feedback)
+
+- [x] Hero, whoami-Text und Bereiche zu **einer** Grafik zusammengefasst (`hero`, ca. 590 px): Text links, Rack rechts
+- [x] Netzwerk-Topologie entfernt (Leitungen um den Switch wirkten wie ein Hakenkreuz), stattdessen ein Server-Rack ohne Leitungen
+- [x] Einschub-LEDs liegen exakt auf Höhe der Listen-LEDs und gehen synchron an
+- [x] Kurztext jetzt im Bild; vollständig im Alt-Text enthalten (dadurch nicht mehr als Markdown durchsuchbar)
+- [ ] Social-Preview-Bild neu aufnehmen (Hero hat sich geändert) – **offen für dich**
+
