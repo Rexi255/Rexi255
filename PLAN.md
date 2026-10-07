@@ -25,7 +25,7 @@ Unter jeder Phase steht ein **Prompt**, den ich in Claude Code einfügen kann.
 **Befehle:**
 - `python3 scripts/build.py` – Templates → `assets/`, Vorschau neu erzeugen, Prüfung (Exit ≠ 0 bei Verstoß)
 - `python3 scripts/check.py` – nur Prüfung
-- `python3 scripts/screenshot.py [--at MS] [--reduced-motion] [--only NAME]` – Screenshots nach `preview/shots/`
+- `python3 scripts/screenshot.py [--at MS] [--reduced-motion] [--only NAME]` – Screenshots nach `preview/shots/` (Echtzeit per Playwright, falls installiert, sonst Headless-Shell mit virtueller Zeit)
 
 **Hinweis Headless:** Screenshots laufen über `chrome-headless-shell` (klassischer Headless-Modus). Normales Chrome im neuen Headless-Modus schneidet ca. 88 px ab und lässt Animationen nicht vorlaufen. SMIL-Animationen sind gesperrt, weil `prefers-reduced-motion` sie nicht stoppen kann – nur CSS-Animationen.
 
@@ -37,12 +37,12 @@ Unter jeder Phase steht ein **Prompt**, den ich in Claude Code einfügen kann.
 
 **Ziel:** Richtung festlegen, bevor Zeit in Animation fließt.
 
-- [ ] 3 statische Hero-Varianten (keine Animation), alle im Designsystem:
+- [x] 3 statische Hero-Varianten (keine Animation), alle im Designsystem:
   - A: Isometrisches Server-Rack, Name auf einem Display-Einschub
   - B: Netzwerktopologie (Router → Switch → Server-Knoten), Name im Zentrum
   - C: Mischung – Rack links, Topologie rechts, Pakete fließen dazwischen
-- [ ] Screenshots aller drei nebeneinander
-- [ ] Ich entscheide mich für eine Variante (oder Kombination) und notiere sie hier: `Gewählt: ___`
+- [x] Screenshots aller drei nebeneinander
+- [x] Ich entscheide mich für eine Variante (oder Kombination) und notiere sie hier: `Gewählt: B – Netzwerktopologie, Name als Dot-Matrix „Rexi255“ oben`
 
 > **Prompt:** „Phase 1: Erstelle drei statische Hero-Varianten A, B, C wie in PLAN.md beschrieben. Keine Animation. Zeig mir alle drei als Screenshots nebeneinander, Dark und Light.“
 
@@ -52,16 +52,17 @@ Unter jeder Phase steht ein **Prompt**, den ich in Claude Code einfügen kann.
 
 **Ziel:** Der Eyecatcher. Hier steckt die meiste Arbeit.
 
-- [ ] Boot-Sequenz (einmalig, ca. 3–4 s):
+- [x] Boot-Sequenz (einmalig, ca. 3–4 s):
   1. Raster blendet ein
   2. Rack/Knoten bauen sich gestaffelt auf
   3. Status-LEDs gehen nacheinander auf `ok`
   4. Name erscheint Zeile für Zeile, kurz `System online`
-- [ ] Ambient-Loop danach: Pakete fließen ruhig zwischen Knoten, einzelne LEDs blinken versetzt
-- [ ] `prefers-reduced-motion`: statischer Endzustand
-- [ ] Light-Variante
-- [ ] Größe ≤ 300 KB, lesbar bei 400 px
+- [x] Ambient-Loop danach: Pakete fließen ruhig zwischen Knoten, einzelne LEDs blinken versetzt
+- [x] `prefers-reduced-motion`: statischer Endzustand
+- [x] Light-Variante
+- [x] Größe ≤ 300 KB, lesbar bei 400 px
 - [ ] Mit echtem Browser geprüft: Chrome, Firefox, Safari (falls verfügbar), GitHub-Mobile-App
+  - Chromium (Headless, Echtzeit) ✅ – Firefox, Safari und GitHub-App bitte selbst prüfen, in der Cloud-Umgebung nicht verfügbar
 
 > **Prompt:** „Phase 2: Animiere die gewählte Hero-Variante nach PLAN.md. Erst die Boot-Sequenz, zeig mir Screenshots zu 3–4 Zeitpunkten. Dann den Ambient-Loop. Halte dich strikt an die Animationsregeln in CLAUDE.md.“
 

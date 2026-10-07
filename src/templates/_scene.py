@@ -73,8 +73,9 @@ class Face:
             d += f"M{num(x1)} {num(y1)}L{num(x2)} {num(y2)}"
         return f'<path class="{cls}" d="{d}"/>'
 
-    def dots(self, centers_uv, r, cls):
-        return f'<path class="{cls}" d="{circles([self.point(u, v) for u, v in centers_uv], r)}"/>'
+    def dots(self, centers_uv, r, cls, style=""):
+        st = f' style="{style}"' if style else ""
+        return f'<path class="{cls}"{st} d="{circles([self.point(u, v) for u, v in centers_uv], r)}"/>'
 
 
 def matrix_uv(text, u0, v_top, pitch):
@@ -108,10 +109,15 @@ def floor_grid(iso, x0, y0, x1, y1, step):
     return f'<path class="floor" d="{d}"/>'
 
 
-def link(iso, *pts, z=0):
-    """Verbindung entlang der Iso-Achsen durch die gegebenen (x, y)-Punkte."""
+def link(iso, *pts, z=0, style=""):
+    """Verbindung entlang der Iso-Achsen durch die gegebenen (x, y)-Punkte.
+
+    pathLength="100" normiert die Länge, damit sich jede Leitung mit
+    stroke-dasharray/-dashoffset 100 gleich "zeichnen" lässt.
+    """
     d = "M" + "L".join(f"{num(sx)} {num(sy)}" for sx, sy in (iso.point(x, y, z) for x, y in pts))
-    return f'<path class="link" d="{d}"/>'
+    st = f' style="{style}"' if style else ""
+    return f'<path class="link" pathLength="100"{st} d="{d}"/>'
 
 
 def packet(iso, x, y, z=0, size=0.7):
@@ -122,26 +128,26 @@ def packet(iso, x, y, z=0, size=0.7):
 
 # --- Netzwerk-Knoten -------------------------------------------------------
 
-def server(iso, x, y, w=2, d=2, h=4):
+def server(iso, x, y, w=2, d=2, h=4, led_style=""):
     """Kleiner Tower-Server mit Laufwerksschlitzen und LEDs auf der Front."""
     out = box(iso, x, y, 0, w, d, h)
     f = Face(iso, "left", x, y + d, 0)
     out += f.lines([((0.4, v), (w - 0.4, v)) for v in (h - 1.2, h - 1.8, h - 2.4)])
-    out += f.dots([(0.6, h - 0.6)], 2.4, "ok")
+    out += f.dots([(0.6, h - 0.6)], 2.4, "ok", led_style)
     return out
 
 
-def switch(iso, x, y, w=7, d=3, h=1.2):
+def switch(iso, x, y, w=7, d=3, h=1.2, led_style=""):
     """Flacher Switch mit Port-Reihe und Status-LEDs."""
     out = box(iso, x, y, 0, w, d, h)
     f = Face(iso, "left", x, y + d, 0)
     ports = int((w - 1.6) / 0.8)
     out += "".join(f.rect(0.8 + i * 0.8, 0.3, 0.55, 0.5, "s") for i in range(ports))
-    out += f.dots([(0.8 + i * 0.8 + 0.27, 0.95) for i in range(ports)], 1.4, "ok")
+    out += f.dots([(0.8 + i * 0.8 + 0.27, 0.95) for i in range(ports)], 1.4, "ok", led_style)
     return out
 
 
-def router(iso, x, y, w=3, d=3, h=1.2):
+def router(iso, x, y, w=3, d=3, h=1.2, led_style=""):
     """Router: flacher Kasten mit zwei Antennen."""
     out = box(iso, x, y, 0, w, d, h)
     ant = []
@@ -150,7 +156,7 @@ def router(iso, x, y, w=3, d=3, h=1.2):
         ant.append(f"M{num(a)} {num(b)}L{num(c)} {num(e)}")
     out += f'<path class="ln" d="{"".join(ant)}"/>'
     f = Face(iso, "left", x, y + d, 0)
-    out += f.dots([(0.6 + i * 0.6, 0.6) for i in range(3)], 1.6, "ok")
+    out += f.dots([(0.6 + i * 0.6, 0.6) for i in range(3)], 1.6, "ok", led_style)
     return out
 
 
@@ -166,3 +172,56 @@ def document(tok, height, label, body, css=""):
         f'<rect width="{width}" height="{height}" fill="{tok["color.bg"]}"/>\n'
         f"{body}\n</svg>"
     )
+
+
+# --- Animation --------------------------------------------------------------
+
+def secs(value):
+    """Token-Zeit wie "0.4s" -> 0.4"""
+    return float(str(value).rstrip("s"))
+
+
+def anim(name, duration, delay=0, ease="", extra="backwards"):
+    """Ein Eintrag für die CSS-Eigenschaft animation (Zeiten in Sekunden)."""
+    parts = [name, f"{num(duration)}s", ease, f"{num(delay)}s", extra]
+    return " ".join(p for p in parts if p)
+
+
+def style(*animations):
+    return "animation: " + ", ".join(animations)
+
+
+def packet_shape(iso, size=0.7):
+    """Paket um (0, 0) zentriert: Raute in accent, heller Kern in accent-glow."""
+    ox, oy = iso.point(0, 0)
+
+    def tile(s):
+        pts = [iso.point(a, b) for a, b in ((-s, -s), (s, -s), (s, s), (-s, s))]
+        return " ".join(f"{num(x - ox)},{num(y - oy)}" for x, y in pts)
+
+    return poly(tile(size / 2), "acc") + poly(tile(size / 5), "glow")
+
+
+def path_keyframes(name, points, start, end):
+    """@keyframes, die ein Element entlang der Punkte bewegen (translate).
+
+    Die Bewegung läuft zwischen start% und end% der Animationsdauer,
+    Prozentwerte je Ecke proportional zur Streckenlänge. Davor und danach
+    ist das Element ausgeblendet.
+    """
+    lengths = [((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
+               for (x1, y1), (x2, y2) in zip(points, points[1:])]
+    total = sum(lengths)
+    frames, acc = [], 0.0
+    for i, (x, y) in enumerate(points):
+        if i:
+            acc += lengths[i - 1]
+        pct = start + (end - start) * acc / total
+        frames.append(f"{num(pct)}% {{ transform: translate({num(x)}px, {num(y)}px); }}")
+    fade = (end - start) * 0.08
+    frames.append(
+        f"0%, {num(end)}%, 100% {{ opacity: 0; }} "
+        f"{num(start + fade)}%, {num(end - fade)}% {{ opacity: 1; }}"
+    )
+    frames.append(f"100% {{ transform: translate({num(points[-1][0])}px, {num(points[-1][1])}px); }}")
+    return f"@keyframes {name} {{ " + " ".join(frames) + " }"
