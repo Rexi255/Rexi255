@@ -10,7 +10,7 @@ Ablauf:
   3. Für jedes Theme (dark, light) rendern und nach
      assets/<name>-<theme>.svg schreiben.
   4. Generierte SVGs ohne zugehöriges Template entfernen.
-  5. preview/index.html neu erzeugen.
+  5. preview/index.html und README.md (aus src/readme.md) neu erzeugen.
   6. Prüfskript laufen lassen. Exit-Code != 0, wenn etwas verletzt ist.
 
 Nur Python-Standardbibliothek.
@@ -23,6 +23,7 @@ from pathlib import Path
 
 import check
 import preview
+import readme
 from svglib import Tokens
 
 # Templates dürfen gemeinsame Helfer aus src/templates/_*.py importieren
@@ -72,6 +73,8 @@ def main():
     build_assets()
     print("Vorschau:")
     preview.build()
+    print("README:")
+    readme.build()
     print("Prüfung:")
     return check.main([])
 

@@ -39,10 +39,11 @@ def render(tok):
     char_w = tok["font.size.min"] * 0.6  # Monospace: ca. 0,6 em je Zeichen
     max_chars = int((width - MARGIN - LABEL_X) / char_w)
 
-    groups = []
+    groups, alt = [], []
     for g in tok.raw["skills"]:
-        lines = [] if g["items"] == [g["group"]] else wrap(g["items"], max_chars)
-        groups.append((g["group"], lines))
+        own = g["items"] != [g["group"]]
+        groups.append((g["group"], wrap(g["items"], max_chars) if own else []))
+        alt.append(g["group"] + (": " + ", ".join(g["items"]) if own else ""))
     heights = [((1 + len(lines)) * LINE + 2 * PAD) / unit for _, lines in groups]
     rack_h = sum(heights) + 1.0
 
@@ -63,7 +64,7 @@ def render(tok):
         "@keyframes blink { 0%, 88%, 100% { opacity: 1; } 91% { opacity: 0.15; } }",
         f".hdr {{ fill: {tok['color.accent']}; }}",
     ]
-    labels, alt = [], []
+    labels = []
 
     z_top = rack_h - 0.5
     for i, ((group, lines), h) in enumerate(zip(groups, heights)):
@@ -95,13 +96,12 @@ def render(tok):
         labels.append(f'<text class="hdr" x="{LABEL_X}" y="{num(y)}">{html.escape(group)}</text>')
         for j, line in enumerate(lines, 1):
             labels.append(f'<text class="txt" x="{LABEL_X}" y="{num(y + j * LINE)}">{html.escape(line)}</text>')
-        alt.append(group + (": " + ", ".join(lines) if lines else ""))
         z_top = z_bot
 
     # Akzentkante oben an der Front
     (a, b), (c, d) = iso.point(DEPTH, 0, rack_h), iso.point(DEPTH, FRONT, rack_h)
     body.append(f'<path class="edge-glow" d="M{num(a)} {num(b)}L{num(c)} {num(d)}"/>')
 
-    label = ("Isometrisches Server-Rack mit sechs Einschüben und grünen Status-LEDs, "
+    label = (f"Isometrisches Server-Rack mit {len(groups)} Einschüben und grünen Status-LEDs, "
              "jeder Einschub ist beschriftet: " + "; ".join(alt) + ".")
     return document(tok, height, html.escape(label, quote=True), "\n".join(body + labels), "\n".join(css))

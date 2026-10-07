@@ -30,6 +30,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 ASSETS = ROOT / "assets"
+README = ROOT / "README.md"
 TOKENS = ROOT / "src" / "design" / "tokens.json"
 
 KB = 1024
@@ -154,6 +155,30 @@ def check_file(path, tokens):
     return errors
 
 
+def check_readme():
+    """README: Bilder vorhanden, relative Pfade, Alt-Texte, kein Skript."""
+    errors = []
+    text = README.read_text(encoding="utf-8")
+    if re.search(r"<script|javascript:|on\w+\s*=", text, re.IGNORECASE):
+        errors.append("Skript/Event-Handler gefunden")
+    for ref in re.findall(r'(?:src|srcset)="([^"]+)"', text):
+        if re.match(r"[a-z]+:", ref) or ref.startswith("/"):
+            errors.append(f"Bildpfad nicht relativ: {ref}")
+        elif not (ROOT / ref).exists():
+            errors.append(f"Bild fehlt: {ref}")
+    for img in re.findall(r"<img\b[^>]*>", text):
+        alt = re.search(r'alt="([^"]*)"', img)
+        if not alt or len(alt.group(1).strip()) < 10:
+            errors.append(f"Alt-Text fehlt/zu kurz: {img[:60]}…")
+    for picture in re.findall(r"<picture>.*?</picture>", text, re.DOTALL):
+        if 'prefers-color-scheme: dark' not in picture or 'prefers-color-scheme: light' not in picture:
+            errors.append("<picture> ohne Dark- und Light-Quelle")
+        fallback = re.search(r'<img[^>]*src="([^"]+)"', picture)
+        if fallback and not fallback.group(1).endswith("-dark.svg"):
+            errors.append(f"Fallback-<img> ist nicht die Dark-Variante: {fallback.group(1)}")
+    return errors
+
+
 def main(argv):
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("files", nargs="*", type=Path)
@@ -186,6 +211,13 @@ def main(argv):
             f"{'':<19} {total / KB:7.1f} KB / {BUDGET_TOTAL // KB} KB"
         )
         failed |= over
+
+        if README.exists():
+            readme_errors = check_readme()
+            print(f"  {'FEHLER' if readme_errors else 'ok    '} README.md")
+            for err in readme_errors:
+                print(f"           - {err}")
+            failed |= bool(readme_errors)
 
     if not files:
         print("  (keine SVGs in assets/)")

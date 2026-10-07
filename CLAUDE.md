@@ -25,7 +25,7 @@ Der vollständige Umsetzungsplan steht in `PLAN.md`. Arbeite Phase für Phase un
 **Wichtig:** Keine Produkt- oder Markennamen und keine konkreten Details aus meinem Arbeitsumfeld verwenden (kein Arbeitgeber, keine Kunden, keine eingesetzten Systeme). Weder in der README noch in Grafiken, Alt-Texten oder Commit-Messages. Nur die allgemeinen Bereiche oben.
 - **Projekte zum Hervorheben:**
   - [LF7-Projekt_GAS](https://github.com/BBZ-AIFS51/LF7-Projekt_GAS) – Schul-Teamprojekt: kleine Alarmanlage auf Mikrocontroller-Basis mit PIN-Feld, RFID und Bewegungsmelder, 3D-gedrucktem Gehäuse und interaktivem 3D-Modell im Browser
-  - `<z. B. Berichtspilot – portable Electron-App für Ausbildungsnachweise>`
+  - Berichtspilot – portable Electron-App für Ausbildungsnachweise (noch ohne Link)
   - `<weitere>`
 - **Kontakt/Links:** keine. Keine Kontakt-, Social- oder Mail-Links ins Profil einbauen.
 

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" width="900" height="640" role="img" aria-label="Isometrisches Server-Rack mit sechs Einschüben und grünen Status-LEDs, jeder Einschub ist beschriftet: Netzwerk; Security: IT-Sicherheit; Server: Server-Administration · Linux; Auth: Authentifizierung &amp; Verzeichnisdienste; Deployment: Client-Deployment &amp; Geräteverwaltung, IT-Support; Privat: Homelab · Eigene Tools &amp; Skripte.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" width="900" height="640" role="img" aria-label="Isometrisches Server-Rack mit 6 Einschüben und grünen Status-LEDs, jeder Einschub ist beschriftet: Netzwerk; Security: IT-Sicherheit; Server: Server-Administration, Linux; Auth: Authentifizierung &amp; Verzeichnisdienste; Deployment: Client-Deployment &amp; Geräteverwaltung, IT-Support; Privat: Homelab, Eigene Tools &amp; Skripte.">
 <style>
 text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; font-size: 24px; }
 .t { fill: #FFFFFF; }
