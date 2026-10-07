@@ -15,7 +15,6 @@ text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation M
 .acc { fill: #7C3AED; }
 .glow { fill: #A78BFA; }
 .edge-glow { fill: none; stroke: #7C3AED; stroke-width: 2; stroke-linecap: round; }
-.link { fill: none; stroke: #7C3AED; stroke-opacity: 0.45; stroke-width: 2; stroke-linejoin: round; }
 .floor { fill: none; stroke: #DDD2F2; stroke-width: 1; }
 .txt { fill: #1E1533; }
 .mut { fill: #6B6385; }
@@ -30,10 +29,10 @@ text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation M
 <rect x="1" y="1" width="438" height="306" rx="14" fill="#FAF8FF" stroke="#DDD2F2" stroke-width="1.5"/>
 <text x="28" y="56"><tspan class="hdr">&gt; </tspan><tspan class="title">Berichtspilot</tspan></text>
 <text class="mut" x="412" y="56" text-anchor="end">02</text>
-<path class="ok" style="animation: fade 0.4s steps(2) 4.84s backwards, blink 12s steps(1) 9.84s infinite" d="M361 48a5 5 0 1 0 10 0a5 5 0 1 0 -10 0"/>
+<path class="ok" style="animation: fade 0.4s steps(2) 4.96s backwards, blink 12s steps(1) 9.96s infinite" d="M361 48a5 5 0 1 0 10 0a5 5 0 1 0 -10 0"/>
 <path class="ln" d="M28 78H412"/>
 <text class="mut" x="28" y="118">Portable App für</text>
 <text class="mut" x="28" y="148">Ausbildungsnachweise</text>
-<g style="animation: fade 0.4s steps(2) 4.84s backwards"><rect class="tag" x="28" y="198" width="143.2" height="36" rx="18.0"/><text class="hdr" x="99.6" y="224" text-anchor="middle">Electron</text></g>
-<g style="animation: fade 0.4s steps(2) 4.94s backwards"><rect class="tag" x="181.2" y="198" width="143.2" height="36" rx="18.0"/><text class="hdr" x="252.8" y="224" text-anchor="middle">portable</text></g>
+<g style="animation: fade 0.4s steps(2) 4.96s backwards"><rect class="tag" x="28" y="198" width="143.2" height="36" rx="18.0"/><text class="hdr" x="99.6" y="224" text-anchor="middle">Electron</text></g>
+<g style="animation: fade 0.4s steps(2) 5.06s backwards"><rect class="tag" x="181.2" y="198" width="143.2" height="36" rx="18.0"/><text class="hdr" x="252.8" y="224" text-anchor="middle">portable</text></g>
 </svg>

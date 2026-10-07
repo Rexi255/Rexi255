@@ -1,25 +1,12 @@
 <!-- GENERIERT aus src/readme.md durch scripts/build.py – bitte dort bearbeiten. -->
 
+## `$ whoami`
+
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg">
-    <img src="assets/hero-dark.svg" width="900" alt="Rexi255 in leuchtender Punktschrift, darunter: Azubi Fachinformatiker für Systemintegration, system online. Rechts eine isometrische Netzwerktopologie aus Router, Switch und drei Servern, über deren Leitungen Datenpakete fließen.">
-  </picture>
-</p>
-
-## `$ whoami`
-
-Jan, Azubi Fachinformatiker für Systemintegration.<br>
-Netzwerk, IT-Sicherheit, Server & Linux – beruflich und im eigenen Homelab.
-
-## `$ ls ~/bereiche`
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/stack-light.svg">
-    <img src="assets/stack-dark.svg" width="900" alt="Schmales isometrisches Server-Rack mit 6 Einschüben und grünen Status-LEDs, jeder Einschub ist beschriftet: Netzwerk; Security: IT-Sicherheit; Server: Server-Administration, Linux; Auth: Authentifizierung &amp; Verzeichnisdienste; Deployment: Client-Deployment &amp; Geräteverwaltung, IT-Support; Privat: Homelab, Eigene Tools &amp; Skripte.">
+    <img src="assets/hero-dark.svg" width="900" alt="Rexi255 in leuchtender Punktschrift. Jan, Azubi Fachinformatiker für Systemintegration. Netzwerk, IT-Sicherheit, Server &amp; Linux – beruflich und im eigenen Homelab. Bereiche: Netzwerk; Security: IT-Sicherheit; Server: Server-Administration, Linux; Auth: Authentifizierung &amp; Verzeichnisdienste; Deployment: Client-Deployment &amp; Geräteverwaltung, IT-Support; Privat: Homelab, Eigene Tools &amp; Skripte. Rechts ein isometrisches Server-Rack, dessen untere Einschübe mit grünen LEDs zu den Bereichen gehören; system online.">
   </picture>
 </p>
 

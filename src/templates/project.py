@@ -11,7 +11,7 @@ oben rechts blinkt danach sehr ruhig. reduced motion: alles sichtbar, ruhig.
 
 import html
 
-from _scene import anim, boot_schedule, circles, document, secs, style
+from _scene import anim, boot_schedule, circles, document, secs, style, word_wrap
 from svglib import num
 
 PAD = 28
@@ -23,18 +23,6 @@ TAG_GAP = 10
 
 def variants(tok):
     return [str(i + 1) for i in range(len(tok.raw["projects"]))]
-
-
-def word_wrap(text, max_chars):
-    lines, current = [], ""
-    for word in text.split():
-        candidate = f"{current} {word}" if current else word
-        if current and len(candidate) > max_chars:
-            lines.append(current)
-            current = word
-        else:
-            current = candidate
-    return lines + [current] if current else lines
 
 
 def layout(tok, project):

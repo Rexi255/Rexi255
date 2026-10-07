@@ -15,7 +15,6 @@ text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation M
 .acc { fill: #A855F7; }
 .glow { fill: #D8B4FE; }
 .edge-glow { fill: none; stroke: #A855F7; stroke-width: 2; stroke-linecap: round; }
-.link { fill: none; stroke: #A855F7; stroke-opacity: 0.45; stroke-width: 2; stroke-linejoin: round; }
 .floor { fill: none; stroke: #2B2145; stroke-width: 1; }
 .txt { fill: #EDE9FE; }
 .mut { fill: #8B81A8; }
@@ -32,11 +31,11 @@ text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation M
 <circle class="off" cx="46" cy="23.0" r="6"/>
 <circle class="off" cx="68" cy="23.0" r="6"/>
 <text class="mut" x="450.0" y="31.0" text-anchor="middle">rexi255@profile: ~</text>
-<text x="32" y="80" style="animation: fade 0.2s steps(1) 7.2s backwards"><tspan class="prompt">$</tspan><tspan class="txt"> ./status.sh</tspan></text>
-<text x="32" y="116" style="animation: fade 0.2s steps(1) 7.4s backwards"><tspan class="mut">last_update</tspan><tspan class="txt" x="305.6">2026-10-07</tspan></text>
-<text x="32" y="152" style="animation: fade 0.2s steps(1) 7.6s backwards"><tspan class="mut">commits_this_week</tspan><tspan class="txt" x="305.6">8</tspan></text>
-<text x="540" y="116" style="animation: fade 0.2s steps(1) 7.8s backwards"><tspan class="mut">public_repos</tspan><tspan class="txt" x="741.6">3</tspan></text>
-<text x="540" y="152" style="animation: fade 0.2s steps(1) 8s backwards"><tspan class="mut">uptime</tspan><tspan class="txt" x="741.6">since 2025</tspan></text>
-<text x="32" y="188" style="animation: fade 0.2s steps(1) 8.2s backwards"><tspan class="prompt">$</tspan></text>
-<rect class="acc" x="60.8" y="168" width="14.4" height="24" style="animation: fade 0.2s steps(1) 8.2s backwards, cursor 1.2s steps(1) 8.6s infinite"/>
+<text x="32" y="80" style="animation: fade 0.2s steps(1) 7.32s backwards"><tspan class="prompt">$</tspan><tspan class="txt"> ./status.sh</tspan></text>
+<text x="32" y="116" style="animation: fade 0.2s steps(1) 7.52s backwards"><tspan class="mut">last_update</tspan><tspan class="txt" x="305.6">2026-10-07</tspan></text>
+<text x="32" y="152" style="animation: fade 0.2s steps(1) 7.72s backwards"><tspan class="mut">commits_this_week</tspan><tspan class="txt" x="305.6">8</tspan></text>
+<text x="540" y="116" style="animation: fade 0.2s steps(1) 7.92s backwards"><tspan class="mut">public_repos</tspan><tspan class="txt" x="741.6">3</tspan></text>
+<text x="540" y="152" style="animation: fade 0.2s steps(1) 8.12s backwards"><tspan class="mut">uptime</tspan><tspan class="txt" x="741.6">since 2025</tspan></text>
+<text x="32" y="188" style="animation: fade 0.2s steps(1) 8.32s backwards"><tspan class="prompt">$</tspan></text>
+<rect class="acc" x="60.8" y="168" width="14.4" height="24" style="animation: fade 0.2s steps(1) 8.32s backwards, cursor 1.2s steps(1) 8.72s infinite"/>
 </svg>

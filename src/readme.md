@@ -1,15 +1,8 @@
 <!-- GENERIERT aus src/readme.md durch scripts/build.py – bitte dort bearbeiten. -->
 
-{{picture:hero}}
-
 ## `$ whoami`
 
-Jan, Azubi Fachinformatiker für Systemintegration.<br>
-Netzwerk, IT-Sicherheit, Server & Linux – beruflich und im eigenen Homelab.
-
-## `$ ls ~/bereiche`
-
-{{picture:stack}}
+{{picture:hero}}
 
 ## `$ ls ~/tools`
 
