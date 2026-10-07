@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 308" width="440" height="308" role="img" aria-label="Projektkarte 02: Berichtspilot – Portable App für Ausbildungsnachweise. Stichworte: Electron, portable.">
+<style>
+text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; font-size: 24px; }
+.t { fill: #FFFFFF; }
+.l { fill: #F0EAFB; }
+.r { fill: #DDD2F2; }
+.t, .l, .r, .p, .s { stroke: #DDD2F2; stroke-width: 1; stroke-linejoin: round; }
+.p { fill: #FFFFFF; }
+.s { fill: #FAF8FF; }
+.ln { fill: none; stroke: #DDD2F2; stroke-width: 1; stroke-linecap: round; }
+.on { fill: #7C3AED; }
+.off { fill: #DDD2F2; }
+.ok { fill: #15803D; }
+.warn { fill: #A16207; }
+.acc { fill: #7C3AED; }
+.glow { fill: #A78BFA; }
+.edge-glow { fill: none; stroke: #7C3AED; stroke-width: 2; stroke-linecap: round; }
+.link { fill: none; stroke: #7C3AED; stroke-opacity: 0.45; stroke-width: 2; stroke-linejoin: round; }
+.floor { fill: none; stroke: #DDD2F2; stroke-width: 1; }
+.txt { fill: #1E1533; }
+.mut { fill: #6B6385; }
+@keyframes fade { from { opacity: 0; } }
+@keyframes blink { 0%, 90%, 100% { opacity: 1; } 94% { opacity: 0.15; } }
+.hdr { fill: #7C3AED; }
+.title { font-weight: 700; fill: #1E1533; }
+.tag { fill: none; stroke: #7C3AED; stroke-opacity: 0.6; stroke-width: 1.5; }
+.arrow { fill: none; stroke: #7C3AED; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+</style>
+<rect x="1" y="1" width="438" height="306" rx="14" fill="#FAF8FF" stroke="#DDD2F2" stroke-width="1.5"/>
+<text x="28" y="56"><tspan class="hdr">&gt; </tspan><tspan class="title">Berichtspilot</tspan></text>
+<text class="mut" x="412" y="56" text-anchor="end">02</text>
+<path class="ok" style="animation: fade 0.4s steps(2) 8.24s backwards, blink 12s steps(1) 13.24s infinite" d="M361 48a5 5 0 1 0 10 0a5 5 0 1 0 -10 0"/>
+<path class="ln" d="M28 78H412"/>
+<text class="mut" x="28" y="118">Portable App für</text>
+<text class="mut" x="28" y="148">Ausbildungsnachweise</text>
+<g style="animation: fade 0.4s steps(2) 8.24s backwards"><rect class="tag" x="28" y="198" width="143.2" height="36" rx="18.0"/><text class="hdr" x="99.6" y="224" text-anchor="middle">Electron</text></g>
+<g style="animation: fade 0.4s steps(2) 8.34s backwards"><rect class="tag" x="181.2" y="198" width="143.2" height="36" rx="18.0"/><text class="hdr" x="252.8" y="224" text-anchor="middle">portable</text></g>
+</svg>

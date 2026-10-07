@@ -6,7 +6,8 @@ Aufruf (aus dem Repo-Wurzelverzeichnis):
 Ablauf:
   1. src/design/tokens.json und Live-Daten (src/data/github.json) laden.
   2. Jedes Template src/templates/<name>.py (ohne führendes "_") laden.
-     Es muss eine Funktion render(tok) -> str enthalten.
+     Es muss eine Funktion render(tok) -> str enthalten. Optional liefert
+     variants(tok) mehrere Schlüssel -> render(tok, key) je Schlüssel.
   3. Für jedes Theme (dark, light) rendern und nach
      assets/<name>-<theme>.svg schreiben.
   4. Generierte SVGs ohne zugehöriges Template entfernen.
@@ -66,12 +67,19 @@ def build_assets():
         if path.name.startswith("_"):
             continue
         template = load_template(path)
-        for theme in THEMES:
-            svg = template.render(Tokens(raw, theme, data)).strip() + "\n"
-            out = ASSETS / f"{path.stem}-{theme}.svg"
-            out.write_text(svg, encoding="utf-8", newline="\n")
-            written.add(out.name)
-            print(f"  gebaut   {out.relative_to(ROOT)}  ({len(svg.encode()):,} B)")
+        # Optional: variants(tok) -> Liste von Schlüsseln, je Schlüssel eine
+        # eigene Grafik <name>-<schlüssel> (z. B. eine Karte pro Projekt)
+        variants = getattr(template, "variants", None)
+        keys = variants(Tokens(raw, "dark", data)) if variants else [None]
+        for key in keys:
+            name = path.stem if key is None else f"{path.stem}-{key}"
+            for theme in THEMES:
+                tok = Tokens(raw, theme, data)
+                svg = (template.render(tok) if key is None else template.render(tok, key)).strip() + "\n"
+                out = ASSETS / f"{name}-{theme}.svg"
+                out.write_text(svg, encoding="utf-8", newline="\n")
+                written.add(out.name)
+                print(f"  gebaut   {out.relative_to(ROOT)}  ({len(svg.encode()):,} B)")
 
     for theme in THEMES:
         for stale in ASSETS.glob(f"*-{theme}.svg"):
