@@ -6,7 +6,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg">
-    <img src="assets/hero-dark.svg" width="900" alt="Rexi255 in leuchtender Punktschrift. Jan, Azubi Fachinformatiker für Systemintegration. Netzwerk, IT-Sicherheit, Server &amp; Linux – beruflich und im eigenen Homelab. Bereiche: Netzwerk; Security: IT-Sicherheit; Server: Server-Administration, Linux; Auth: Authentifizierung &amp; Verzeichnisdienste; Deployment: Client-Deployment &amp; Geräteverwaltung, IT-Support; Privat: Homelab, Eigene Tools &amp; Skripte. Rechts ein isometrisches Server-Rack, dessen untere Einschübe mit grünen LEDs zu den Bereichen gehören; system online.">
+    <img src="assets/hero-dark.svg" width="900" alt="Rexi255 in leuchtender Punktschrift. Jan, Azubi Fachinformatiker für Systemintegration. Netzwerk, IT-Sicherheit, Server &amp; Linux/Windows. Bereiche: Netzwerk; Security: IT-Sicherheit; Server: Server-Administration, Linux; Auth: Authentifizierung &amp; Verzeichnisdienste; Deployment: Client-Deployment &amp; Geräteverwaltung, IT-Support; Privat: Homelab, Eigene Tools &amp; Skripte. Rechts ein isometrisches Server-Rack, dessen untere Einschübe mit grünen LEDs zu den Bereichen gehören; system online.">
   </picture>
 </p>
 
