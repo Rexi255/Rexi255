@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 318" width="900" height="318" role="img" aria-label="Terminalfenster mit dem Profilstatus: last_update 2026-10-07, commits_this_week 8, public_repos 3, uptime since 2025.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 228" width="900" height="228" role="img" aria-label="Terminalfenster mit dem Profilstatus: last_update 2026-10-07, commits_this_week 8, public_repos 3, uptime since 2025.">
 <style>
 text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; font-size: 24px; }
 .t { fill: #2B2145; }
@@ -21,24 +21,22 @@ text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation M
 .mut { fill: #8B81A8; }
 @keyframes fade { from { opacity: 0; } }
 @keyframes cursor { 50% { opacity: 0; } }
-.win { fill: #150F24; stroke: #2B2145; stroke-width: 1; }
 .bar { fill: #1E1633; }
 .prompt { fill: #A855F7; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
 </style>
-<rect x="1" y="1" width="898" height="316" rx="14" fill="#0C0915" stroke="#2B2145" stroke-width="1.5"/>
-<rect class="win" x="20" y="20" width="860" height="278" rx="10"/>
-<path class="bar" d="M21 64V30a9 9 0 0 1 9-9H870a9 9 0 0 1 9 9V64Z"/>
-<path class="ln" d="M20 64H880"/>
-<circle class="off" cx="44" cy="42.0" r="6"/>
-<circle class="off" cx="66" cy="42.0" r="6"/>
-<circle class="off" cx="88" cy="42.0" r="6"/>
-<text class="mut" x="450.0" y="50.0" text-anchor="middle">rexi255@profile: ~</text>
-<text x="48" y="104" style="animation: fade 0.2s steps(1) 9.8s backwards"><tspan class="prompt">$</tspan><tspan class="txt"> ./status.sh</tspan></text>
-<text x="48" y="138" style="animation: fade 0.2s steps(1) 10s backwards"><tspan class="mut">last_update</tspan><tspan class="txt" x="321.6">2026-10-07</tspan></text>
-<text x="48" y="172" style="animation: fade 0.2s steps(1) 10.2s backwards"><tspan class="mut">commits_this_week</tspan><tspan class="txt" x="321.6">8</tspan></text>
-<text x="48" y="206" style="animation: fade 0.2s steps(1) 10.4s backwards"><tspan class="mut">public_repos</tspan><tspan class="txt" x="321.6">3</tspan></text>
-<text x="48" y="240" style="animation: fade 0.2s steps(1) 10.6s backwards"><tspan class="mut">uptime</tspan><tspan class="txt" x="321.6">since 2025</tspan></text>
-<text x="48" y="274" style="animation: fade 0.2s steps(1) 10.8s backwards"><tspan class="prompt">$</tspan></text>
-<rect class="acc" x="76.8" y="254" width="14.4" height="24" style="animation: fade 0.2s steps(1) 10.8s backwards, cursor 1.2s steps(1) 11.2s infinite"/>
+<rect x="1" y="1" width="898" height="226" rx="14" fill="#0C0915" stroke="#2B2145" stroke-width="1.5"/>
+<path class="bar" d="M2 44V14a13 13 0 0 1 13 -13H885a13 13 0 0 1 13 13V44Z"/>
+<path class="ln" d="M1 44H899"/>
+<circle class="off" cx="24" cy="23.0" r="6"/>
+<circle class="off" cx="46" cy="23.0" r="6"/>
+<circle class="off" cx="68" cy="23.0" r="6"/>
+<text class="mut" x="450.0" y="31.0" text-anchor="middle">rexi255@profile: ~</text>
+<text x="32" y="80" style="animation: fade 0.2s steps(1) 9.8s backwards"><tspan class="prompt">$</tspan><tspan class="txt"> ./status.sh</tspan></text>
+<text x="32" y="116" style="animation: fade 0.2s steps(1) 10s backwards"><tspan class="mut">last_update</tspan><tspan class="txt" x="305.6">2026-10-07</tspan></text>
+<text x="32" y="152" style="animation: fade 0.2s steps(1) 10.2s backwards"><tspan class="mut">commits_this_week</tspan><tspan class="txt" x="305.6">8</tspan></text>
+<text x="540" y="116" style="animation: fade 0.2s steps(1) 10.4s backwards"><tspan class="mut">public_repos</tspan><tspan class="txt" x="741.6">3</tspan></text>
+<text x="540" y="152" style="animation: fade 0.2s steps(1) 10.6s backwards"><tspan class="mut">uptime</tspan><tspan class="txt" x="741.6">since 2025</tspan></text>
+<text x="32" y="188" style="animation: fade 0.2s steps(1) 10.8s backwards"><tspan class="prompt">$</tspan></text>
+<rect class="acc" x="60.8" y="168" width="14.4" height="24" style="animation: fade 0.2s steps(1) 10.8s backwards, cursor 1.2s steps(1) 11.2s infinite"/>
 </svg>
