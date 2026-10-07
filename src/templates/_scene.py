@@ -177,6 +177,8 @@ def document(tok, height, label, body, css=""):
 # --- Animation --------------------------------------------------------------
 
 HERO_NODES = 6
+SKYLINE_WEEKS = 52
+SKYLINE_WAVE = 0.03  # Versatz je Skyline-Säule (s): die Welle läuft in ca. 1,5 s durch
 
 
 def boot_schedule(tok, nodes=HERO_NODES):
@@ -194,6 +196,9 @@ def boot_schedule(tok, nodes=HERO_NODES):
     t["sys"] = t["name"] + 7 * t["row_step"] + fast
     t["role"] = t["sys"] + base * 0.7
     t["end"] = t["role"] + fast
+    # Folge-Grafiken: Skyline-Welle, danach Terminal-Footer
+    t["skyline"] = t["end"] + base + fast
+    t["skyline_end"] = t["skyline"] + SKYLINE_WEEKS * SKYLINE_WAVE + fast
     return t
 
 

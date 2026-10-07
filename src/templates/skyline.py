@@ -12,10 +12,10 @@ Ohne Daten: flache Säulen und Hinweis "noch keine Daten".
 
 from datetime import date
 
-from _scene import anim, boot_schedule, box, document, secs, style
+from _scene import SKYLINE_WAVE, SKYLINE_WEEKS, anim, boot_schedule, box, document, secs, style
 from svglib import Iso, num
 
-WEEKS = 52
+WEEKS = SKYLINE_WEEKS
 SIZE = 0.8        # Säulen-Grundfläche (Rastereinheiten)
 MAX_H = 14        # Höhe der stärksten Woche (Rastereinheiten)
 MIN_H = 0.15      # Wochen ohne Beiträge: flache Platte
@@ -40,8 +40,7 @@ def render(tok):
 
     ease = tok["motion.ease"]
     fast = secs(tok["motion.fast"])
-    t0 = boot_schedule(tok)["end"] + secs(tok["motion.base"]) + fast
-    wave = 0.03  # Versatz je Säule (s): die Welle läuft in ca. 1,5 s durch
+    t0 = boot_schedule(tok)["skyline"]
 
     css = [
         "@keyframes grow { from { transform: scaleY(0.02); } }",
@@ -62,7 +61,7 @@ def render(tok):
             col += f'<polygon class="acc" fill-opacity="{num(0.2 + 0.8 * counts[i] / peak)}" points="{top}"/>'
             if i == peak_i:
                 col += f'<polygon class="edge-glow" points="{top}"/>'
-        st = style(anim("grow", fast, t0 + i * wave, ease))
+        st = style(anim("grow", fast, t0 + i * SKYLINE_WAVE, ease))
         body.append(f'<g class="col" style="{st}">{col}</g>')
 
     # Beschriftung: Titel oben links, Spitzenwoche unten rechts

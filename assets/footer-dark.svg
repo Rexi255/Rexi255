@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 318" width="900" height="318" role="img" aria-label="Terminalfenster mit dem Profilstatus: last_update n/a, commits_this_week n/a, public_repos n/a, uptime since 2025.">
+<style>
+text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; font-size: 24px; }
+.t { fill: #2B2145; }
+.l { fill: #1E1633; }
+.r { fill: #150F24; }
+.t, .l, .r, .p, .s { stroke: #2B2145; stroke-width: 1; stroke-linejoin: round; }
+.p { fill: #150F24; }
+.s { fill: #0C0915; }
+.ln { fill: none; stroke: #2B2145; stroke-width: 1; stroke-linecap: round; }
+.on { fill: #A855F7; }
+.off { fill: #2B2145; }
+.ok { fill: #4ADE80; }
+.warn { fill: #FBBF24; }
+.acc { fill: #A855F7; }
+.glow { fill: #D8B4FE; }
+.edge-glow { fill: none; stroke: #A855F7; stroke-width: 2; stroke-linecap: round; }
+.link { fill: none; stroke: #A855F7; stroke-opacity: 0.45; stroke-width: 2; stroke-linejoin: round; }
+.floor { fill: none; stroke: #2B2145; stroke-width: 1; }
+.txt { fill: #EDE9FE; }
+.mut { fill: #8B81A8; }
+@keyframes fade { from { opacity: 0; } }
+@keyframes cursor { 50% { opacity: 0; } }
+.win { fill: #150F24; stroke: #2B2145; stroke-width: 1; }
+.bar { fill: #1E1633; }
+.prompt { fill: #A855F7; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+</style>
+<rect width="900" height="318" fill="#0C0915"/>
+<rect class="win" x="20" y="20" width="860" height="278" rx="10"/>
+<path class="bar" d="M21 64V30a9 9 0 0 1 9-9H870a9 9 0 0 1 9 9V64Z"/>
+<path class="ln" d="M20 64H880"/>
+<circle class="off" cx="44" cy="42.0" r="6"/>
+<circle class="off" cx="66" cy="42.0" r="6"/>
+<circle class="off" cx="88" cy="42.0" r="6"/>
+<text class="mut" x="450.0" y="50.0" text-anchor="middle">rexi255@profile: ~</text>
+<text x="48" y="104" style="animation: fade 0.2s steps(1) 7.8s backwards"><tspan class="prompt">$</tspan><tspan class="txt"> ./status.sh</tspan></text>
+<text x="48" y="138" style="animation: fade 0.2s steps(1) 8s backwards"><tspan class="mut">last_update</tspan><tspan class="txt" x="321.6">n/a</tspan></text>
+<text x="48" y="172" style="animation: fade 0.2s steps(1) 8.2s backwards"><tspan class="mut">commits_this_week</tspan><tspan class="txt" x="321.6">n/a</tspan></text>
+<text x="48" y="206" style="animation: fade 0.2s steps(1) 8.4s backwards"><tspan class="mut">public_repos</tspan><tspan class="txt" x="321.6">n/a</tspan></text>
+<text x="48" y="240" style="animation: fade 0.2s steps(1) 8.6s backwards"><tspan class="mut">uptime</tspan><tspan class="txt" x="321.6">since 2025</tspan></text>
+<text x="48" y="274" style="animation: fade 0.2s steps(1) 8.8s backwards"><tspan class="prompt">$</tspan></text>
+<rect class="acc" x="76.8" y="254" width="14.4" height="24" style="animation: fade 0.2s steps(1) 8.8s backwards, cursor 1.2s steps(1) 9.2s infinite"/>
+</svg>
