@@ -5,7 +5,7 @@ Alle Karten bekommen dieselbe Höhe (die der längsten), damit sie bündig
 nebeneinander stehen. Karten mit url zeigen einen Link-Pfeil; verlinkt
 werden sie in der README (Bilder selbst können nicht klicken).
 
-Animation: Tags blenden nach den Tools nacheinander ein, die Status-LED
+Animation: Tags blenden nach dem Hero-Boot nacheinander ein, die Status-LED
 oben rechts blinkt danach sehr ruhig. reduced motion: alles sichtbar, ruhig.
 """
 
@@ -67,7 +67,7 @@ def render(tok, key):
     lines, rows = layouts[index]
 
     fast, step = secs(tok["motion.fast"]), secs(tok["motion.stagger"])
-    t0 = boot_schedule(tok)["tools_end"] + index * step * 2
+    t0 = boot_schedule(tok)["projects"] + index * step * 2
     css = [
         "@keyframes fade { from { opacity: 0; } }",
         "@keyframes blink { 0%, 90%, 100% { opacity: 1; } 94% { opacity: 0.15; } }",

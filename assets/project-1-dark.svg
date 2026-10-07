@@ -30,13 +30,13 @@ text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation M
 <rect x="1" y="1" width="438" height="306" rx="14" fill="#0C0915" stroke="#2B2145" stroke-width="1.5"/>
 <text x="28" y="56"><tspan class="hdr">&gt; </tspan><tspan class="title">LF7-Projekt_GAS</tspan></text>
 <text class="mut" x="412" y="56" text-anchor="end">01</text>
-<path class="ok" style="animation: fade 0.4s steps(2) 7.84s backwards, blink 12s steps(1) 10.84s infinite" d="M361 48a5 5 0 1 0 10 0a5 5 0 1 0 -10 0"/>
+<path class="ok" style="animation: fade 0.4s steps(2) 4.44s backwards, blink 12s steps(1) 7.44s infinite" d="M361 48a5 5 0 1 0 10 0a5 5 0 1 0 -10 0"/>
 <path class="arrow" d="M280.8 55l12 -12M282.8 43h10v10"/>
 <path class="ln" d="M28 78H412"/>
 <text class="mut" x="28" y="118">Schul-Teamprojekt:</text>
 <text class="mut" x="28" y="148">Alarmanlage mit PIN-Feld,</text>
 <text class="mut" x="28" y="178">RFID und Bewegungsmelder</text>
-<g style="animation: fade 0.4s steps(2) 7.84s backwards"><rect class="tag" x="28" y="198" width="244" height="36" rx="18.0"/><text class="hdr" x="150" y="224" text-anchor="middle">Mikrocontroller</text></g>
-<g style="animation: fade 0.4s steps(2) 7.94s backwards"><rect class="tag" x="28" y="244" width="143.2" height="36" rx="18.0"/><text class="hdr" x="99.6" y="270" text-anchor="middle">3D-Druck</text></g>
-<g style="animation: fade 0.4s steps(2) 8.04s backwards"><rect class="tag" x="181.2" y="244" width="157.6" height="36" rx="18.0"/><text class="hdr" x="260" y="270" text-anchor="middle">3D-Modell</text></g>
+<g style="animation: fade 0.4s steps(2) 4.44s backwards"><rect class="tag" x="28" y="198" width="244" height="36" rx="18.0"/><text class="hdr" x="150" y="224" text-anchor="middle">Mikrocontroller</text></g>
+<g style="animation: fade 0.4s steps(2) 4.54s backwards"><rect class="tag" x="28" y="244" width="143.2" height="36" rx="18.0"/><text class="hdr" x="99.6" y="270" text-anchor="middle">3D-Druck</text></g>
+<g style="animation: fade 0.4s steps(2) 4.64s backwards"><rect class="tag" x="181.2" y="244" width="157.6" height="36" rx="18.0"/><text class="hdr" x="260" y="270" text-anchor="middle">3D-Modell</text></g>
 </svg>

@@ -2,19 +2,24 @@
 
 {{picture:hero}}
 
-{{picture:stack}}
-
-### `$ whoami`
+## `$ whoami`
 
 Jan, Azubi Fachinformatiker für Systemintegration.<br>
 Netzwerk, IT-Sicherheit, Server & Linux – beruflich und im eigenen Homelab.
 
-### `$ ls ~/projects`
+## `$ ls ~/bereiche`
 
-- **[LF7-Projekt_GAS](https://github.com/BBZ-AIFS51/LF7-Projekt_GAS)** – Schul-Teamprojekt: kleine Alarmanlage auf Mikrocontroller-Basis mit PIN-Feld, RFID und Bewegungsmelder, 3D-gedrucktem Gehäuse und interaktivem 3D-Modell im Browser
-- **Berichtspilot** – portable Electron-App für Ausbildungsnachweise
+{{picture:stack}}
 
-### `$ git log --since=52.weeks`
+## `$ ls ~/tools`
+
+{{picture:tools}}
+
+## `$ ls ~/projects`
+
+{{projects}}
+
+## `$ git log --since=52.weeks`
 
 {{picture:skyline}}
 

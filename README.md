@@ -8,6 +8,13 @@
   </picture>
 </p>
 
+## `$ whoami`
+
+Jan, Azubi Fachinformatiker für Systemintegration.<br>
+Netzwerk, IT-Sicherheit, Server & Linux – beruflich und im eigenen Homelab.
+
+## `$ ls ~/bereiche`
+
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg">
@@ -16,17 +23,28 @@
   </picture>
 </p>
 
-### `$ whoami`
+## `$ ls ~/tools`
 
-Jan, Azubi Fachinformatiker für Systemintegration.<br>
-Netzwerk, IT-Sicherheit, Server & Linux – beruflich und im eigenen Homelab.
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/tools-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/tools-light.svg">
+    <img src="assets/tools-dark.svg" width="900" alt="Tools als leuchtende Logos auf isometrischen Sockeln: Claude, Claude Code, UniFi, Sophos, Python, Git, GitHub, Linux, Bash.">
+  </picture>
+</p>
 
-### `$ ls ~/projects`
+## `$ ls ~/projects`
 
-- **[LF7-Projekt_GAS](https://github.com/BBZ-AIFS51/LF7-Projekt_GAS)** – Schul-Teamprojekt: kleine Alarmanlage auf Mikrocontroller-Basis mit PIN-Feld, RFID und Bewegungsmelder, 3D-gedrucktem Gehäuse und interaktivem 3D-Modell im Browser
-- **Berichtspilot** – portable Electron-App für Ausbildungsnachweise
+<p align="center">
+  <a href="https://github.com/BBZ-AIFS51/LF7-Projekt_GAS"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-1-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/project-1-light.svg"><img src="assets/project-1-dark.svg" width="49%" alt="Projektkarte 01: LF7-Projekt_GAS – Schul-Teamprojekt: Alarmanlage mit PIN-Feld, RFID und Bewegungsmelder. Stichworte: Mikrocontroller, 3D-Druck, 3D-Modell."></picture></a>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/project-2-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/project-2-light.svg">
+    <img src="assets/project-2-dark.svg" width="49%" alt="Projektkarte 02: Berichtspilot – Portable App für Ausbildungsnachweise. Stichworte: Electron, portable.">
+  </picture>
+</p>
 
-### `$ git log --since=52.weeks`
+## `$ git log --since=52.weeks`
 
 <p align="center">
   <picture>

@@ -204,11 +204,14 @@ def boot_schedule(tok, nodes=HERO_NODES):
     t["sys"] = t["name"] + 7 * t["row_step"] + fast
     t["role"] = t["sys"] + base * 0.7
     t["end"] = t["role"] + fast
-    # Folge-Grafiken nacheinander: Bereiche, Tools, Skyline-Welle, Footer
+    # Oben sichtbar (nacheinander): Bereiche, dann Tools.
     t["stack"] = t["end"]
     t["tools"] = t["stack"] + STACK_GROUPS * step + fast
     t["tools_end"] = t["tools"] + TOOLS * step + fast
-    t["skyline"] = t["tools_end"]
+    # Weiter unten (beim Laden meist außer Sicht): starten direkt nach dem
+    # Hero, damit beim Scrollen nichts mehr leer ist.
+    t["projects"] = t["end"] + fast
+    t["skyline"] = t["end"] + base
     t["skyline_end"] = t["skyline"] + SKYLINE_WEEKS * SKYLINE_WAVE + fast
     return t
 

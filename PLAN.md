@@ -182,3 +182,18 @@ Unter jeder Phase steht ein **Prompt**, den ich in Claude Code einfügen kann.
 | Light Mode sieht kaputt aus | Jede Komponente von Anfang an in beiden Varianten |
 | Action scheitert still | Fehlerbehandlung mit altem Datenstand, GitHub-Mail bei Fehlschlag |
 | Dateien zu groß | Prüfskript bricht bei Budgetüberschreitung ab |
+
+---
+
+## Redesign „kompakt & rund“ (nach Feedback)
+
+Vorbild: Struktur des Profils eines Kollegen (einheitliche Karten, kompakte Höhen, klare Abschnitte) – Farben, Isometrie und Rechenzentrums-Thema bleiben eigen.
+
+- [x] Einheitlicher Kartenrahmen für alle Grafiken (`canvas.radius`), Höhen ca. 230–335 px statt bis zu 640 px
+- [x] Hero kompakt (300 px): Name + Rolle links, Topologie rechts
+- [x] Bereiche kompakt: schmales Rack, eine Zeile je Gruppe
+- [x] Neu: Tools-Sektion, Logos einfarbig lila auf isometrischen Sockeln, reihum leuchtendes Tool (Logos: Simple Icons, CC0-Pfaddaten; Sophos als Dot-Matrix-Kürzel)
+- [x] Neu: Projektkarten (je 440 px, nebeneinander, LF7 verlinkt)
+- [x] Skyline als isometrischer Häuserblock (13 × 4), Footer als Terminal-Karte in zwei Spalten
+- [x] README mit `##`-Abschnitten im Terminal-Stil, aus `src/readme.md` generiert
+- [ ] Alten Branch `claude/festive-faraday-sq3pz0` löschen – **offen für dich** (Proxy der Cloud-Umgebung blockiert Branch-Löschungen): Repo → Branches → Mülleimer
