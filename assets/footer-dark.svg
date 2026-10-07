@@ -26,7 +26,7 @@ text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation M
 .prompt { fill: #A855F7; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
 </style>
-<rect width="900" height="318" fill="#0C0915"/>
+<rect x="1" y="1" width="898" height="316" rx="14" fill="#0C0915" stroke="#2B2145" stroke-width="1.5"/>
 <rect class="win" x="20" y="20" width="860" height="278" rx="10"/>
 <path class="bar" d="M21 64V30a9 9 0 0 1 9-9H870a9 9 0 0 1 9 9V64Z"/>
 <path class="ln" d="M20 64H880"/>
@@ -34,11 +34,11 @@ text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation M
 <circle class="off" cx="66" cy="42.0" r="6"/>
 <circle class="off" cx="88" cy="42.0" r="6"/>
 <text class="mut" x="450.0" y="50.0" text-anchor="middle">rexi255@profile: ~</text>
-<text x="48" y="104" style="animation: fade 0.2s steps(1) 7.8s backwards"><tspan class="prompt">$</tspan><tspan class="txt"> ./status.sh</tspan></text>
-<text x="48" y="138" style="animation: fade 0.2s steps(1) 8s backwards"><tspan class="mut">last_update</tspan><tspan class="txt" x="321.6">2026-10-07</tspan></text>
-<text x="48" y="172" style="animation: fade 0.2s steps(1) 8.2s backwards"><tspan class="mut">commits_this_week</tspan><tspan class="txt" x="321.6">8</tspan></text>
-<text x="48" y="206" style="animation: fade 0.2s steps(1) 8.4s backwards"><tspan class="mut">public_repos</tspan><tspan class="txt" x="321.6">3</tspan></text>
-<text x="48" y="240" style="animation: fade 0.2s steps(1) 8.6s backwards"><tspan class="mut">uptime</tspan><tspan class="txt" x="321.6">since 2025</tspan></text>
-<text x="48" y="274" style="animation: fade 0.2s steps(1) 8.8s backwards"><tspan class="prompt">$</tspan></text>
-<rect class="acc" x="76.8" y="254" width="14.4" height="24" style="animation: fade 0.2s steps(1) 8.8s backwards, cursor 1.2s steps(1) 9.2s infinite"/>
+<text x="48" y="104" style="animation: fade 0.2s steps(1) 9.8s backwards"><tspan class="prompt">$</tspan><tspan class="txt"> ./status.sh</tspan></text>
+<text x="48" y="138" style="animation: fade 0.2s steps(1) 10s backwards"><tspan class="mut">last_update</tspan><tspan class="txt" x="321.6">2026-10-07</tspan></text>
+<text x="48" y="172" style="animation: fade 0.2s steps(1) 10.2s backwards"><tspan class="mut">commits_this_week</tspan><tspan class="txt" x="321.6">8</tspan></text>
+<text x="48" y="206" style="animation: fade 0.2s steps(1) 10.4s backwards"><tspan class="mut">public_repos</tspan><tspan class="txt" x="321.6">3</tspan></text>
+<text x="48" y="240" style="animation: fade 0.2s steps(1) 10.6s backwards"><tspan class="mut">uptime</tspan><tspan class="txt" x="321.6">since 2025</tspan></text>
+<text x="48" y="274" style="animation: fade 0.2s steps(1) 10.8s backwards"><tspan class="prompt">$</tspan></text>
+<rect class="acc" x="76.8" y="254" width="14.4" height="24" style="animation: fade 0.2s steps(1) 10.8s backwards, cursor 1.2s steps(1) 11.2s infinite"/>
 </svg>

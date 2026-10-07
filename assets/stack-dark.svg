@@ -24,48 +24,48 @@ text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation M
 .hdr { fill: #A855F7; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
 </style>
-<rect width="900" height="640" fill="#0C0915"/>
+<rect x="1" y="1" width="898" height="638" rx="14" fill="#0C0915" stroke="#2B2145" stroke-width="1.5"/>
 <g><polygon class="l" points="46.86,584 109.22,620 109.22,104 46.86,68"/><polygon class="r" points="192.35,572 109.22,620 109.22,104 192.35,56"/><polygon class="t" points="130,20 192.35,56 109.22,104 46.86,68"/></g>
 <polygon class="p" points="187.16,117.2 114.41,159.2 114.41,108.8 187.16,66.8"/>
 <path class="ln" d="M159.1 125.6L119.61 148.4M159.1 116L119.61 138.8M159.1 106.4L119.61 129.2M159.1 96.8L119.61 119.6"/>
 <path class="off" d="M178.32 95.6a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0M171.05 99.8a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
-<path class="ok" style="animation: fade 0.4s steps(2) 4.24s backwards" d="M178.32 95.6a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
-<path class="acc" style="animation: fade 0.4s steps(2) 4.34s backwards" d="M171.05 99.8a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
+<path class="ok" style="animation: fade 0.4s steps(2) 4.04s backwards" d="M178.32 95.6a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
+<path class="acc" style="animation: fade 0.4s steps(2) 4.14s backwards" d="M171.05 99.8a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
 <path class="link" d="M200.35 89H236"/>
 <path class="acc" d="M233 89a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/>
 <polygon class="p" points="187.16,201.2 114.41,243.2 114.41,162.8 187.16,120.8"/>
 <path class="ln" d="M159.1 209.6L119.61 232.4M159.1 200L119.61 222.8M159.1 190.4L119.61 213.2M159.1 180.8L119.61 203.6M159.1 171.2L119.61 194M159.1 161.6L119.61 184.4M159.1 152L119.61 174.8"/>
 <path class="off" d="M178.32 164.6a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0M171.05 168.8a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
-<path class="ok" style="animation: fade 0.4s steps(2) 4.44s backwards" d="M178.32 164.6a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
-<path class="acc" style="animation: fade 0.4s steps(2) 4.54s backwards, blink 12s steps(1) 7.24s infinite" d="M171.05 168.8a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
+<path class="ok" style="animation: fade 0.4s steps(2) 4.24s backwards" d="M178.32 164.6a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
+<path class="acc" style="animation: fade 0.4s steps(2) 4.34s backwards, blink 12s steps(1) 7.04s infinite" d="M171.05 168.8a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
 <path class="link" d="M200.35 158H236"/>
 <path class="acc" d="M233 158a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/>
 <polygon class="p" points="187.16,285.2 114.41,327.2 114.41,246.8 187.16,204.8"/>
 <path class="ln" d="M159.1 293.6L119.61 316.4M159.1 284L119.61 306.8M159.1 274.4L119.61 297.2M159.1 264.8L119.61 287.6M159.1 255.2L119.61 278M159.1 245.6L119.61 268.4M159.1 236L119.61 258.8"/>
 <path class="off" d="M178.32 248.6a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0M171.05 252.8a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
-<path class="ok" style="animation: fade 0.4s steps(2) 4.64s backwards" d="M178.32 248.6a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
-<path class="acc" style="animation: fade 0.4s steps(2) 4.74s backwards" d="M171.05 252.8a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
+<path class="ok" style="animation: fade 0.4s steps(2) 4.44s backwards" d="M178.32 248.6a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
+<path class="acc" style="animation: fade 0.4s steps(2) 4.54s backwards" d="M171.05 252.8a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
 <path class="link" d="M200.35 242H236"/>
 <path class="acc" d="M233 242a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/>
 <polygon class="p" points="187.16,369.2 114.41,411.2 114.41,330.8 187.16,288.8"/>
 <path class="ln" d="M159.1 377.6L119.61 400.4M159.1 368L119.61 390.8M159.1 358.4L119.61 381.2M159.1 348.8L119.61 371.6M159.1 339.2L119.61 362M159.1 329.6L119.61 352.4M159.1 320L119.61 342.8"/>
 <path class="off" d="M178.32 332.6a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0M171.05 336.8a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
-<path class="ok" style="animation: fade 0.4s steps(2) 4.84s backwards" d="M178.32 332.6a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
-<path class="acc" style="animation: fade 0.4s steps(2) 4.94s backwards" d="M171.05 336.8a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
+<path class="ok" style="animation: fade 0.4s steps(2) 4.64s backwards" d="M178.32 332.6a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
+<path class="acc" style="animation: fade 0.4s steps(2) 4.74s backwards" d="M171.05 336.8a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
 <path class="link" d="M200.35 326H236"/>
 <path class="acc" d="M233 326a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/>
 <polygon class="p" points="187.16,483.2 114.41,525.2 114.41,414.8 187.16,372.8"/>
 <path class="ln" d="M159.1 491.6L119.61 514.4M159.1 482L119.61 504.8M159.1 472.4L119.61 495.2M159.1 462.8L119.61 485.6M159.1 453.2L119.61 476M159.1 443.6L119.61 466.4M159.1 434L119.61 456.8M159.1 424.4L119.61 447.2M159.1 414.8L119.61 437.6M159.1 405.2L119.61 428"/>
 <path class="off" d="M178.32 431.6a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0M171.05 435.8a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
-<path class="ok" style="animation: fade 0.4s steps(2) 5.04s backwards" d="M178.32 431.6a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
-<path class="acc" style="animation: fade 0.4s steps(2) 5.14s backwards, blink 12s steps(1) 10.24s infinite" d="M171.05 435.8a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
+<path class="ok" style="animation: fade 0.4s steps(2) 4.84s backwards" d="M178.32 431.6a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
+<path class="acc" style="animation: fade 0.4s steps(2) 4.94s backwards, blink 12s steps(1) 10.04s infinite" d="M171.05 435.8a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
 <path class="link" d="M200.35 425H236"/>
 <path class="acc" d="M233 425a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/>
 <polygon class="p" points="187.16,567.2 114.41,609.2 114.41,528.8 187.16,486.8"/>
 <path class="ln" d="M159.1 575.6L119.61 598.4M159.1 566L119.61 588.8M159.1 556.4L119.61 579.2M159.1 546.8L119.61 569.6M159.1 537.2L119.61 560M159.1 527.6L119.61 550.4M159.1 518L119.61 540.8"/>
 <path class="off" d="M178.32 530.6a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0M171.05 534.8a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
-<path class="ok" style="animation: fade 0.4s steps(2) 5.24s backwards" d="M178.32 530.6a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
-<path class="acc" style="animation: fade 0.4s steps(2) 5.34s backwards" d="M171.05 534.8a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
+<path class="ok" style="animation: fade 0.4s steps(2) 5.04s backwards" d="M178.32 530.6a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
+<path class="acc" style="animation: fade 0.4s steps(2) 5.14s backwards" d="M171.05 534.8a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
 <path class="link" d="M200.35 524H236"/>
 <path class="acc" d="M233 524a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/>
 <path class="edge-glow" d="M192.35 56L109.22 104"/>

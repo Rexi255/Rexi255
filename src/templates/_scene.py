@@ -160,23 +160,31 @@ def router(iso, x, y, w=3, d=3, h=1.2, led_style=""):
     return out
 
 
-def document(tok, height, label, body, css=""):
-    """Komplettes SVG mit Hintergrund, Basis-CSS und reduced-motion-Block."""
+def document(tok, height, label, body, css="", width=None):
+    """Komplettes SVG als Karte: abgerundeter Rahmen, Basis-CSS, reduced motion.
+
+    Alle Grafiken teilen denselben Kartenrahmen, damit das Profil als
+    Einheit wirkt. Außerhalb der runden Ecken ist das SVG transparent.
+    """
     from svglib import REDUCED_MOTION_CSS
 
-    width = tok["canvas.width"]
+    width = width or tok["canvas.width"]
+    radius = tok["canvas.radius"]
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" '
         f'width="{width}" height="{height}" role="img" aria-label="{label}">\n'
         f"<style>\n{base_css(tok)}\n{css}\n{REDUCED_MOTION_CSS}\n</style>\n"
-        f'<rect width="{width}" height="{height}" fill="{tok["color.bg"]}"/>\n'
+        f'<rect x="1" y="1" width="{width - 2}" height="{height - 2}" rx="{radius}" '
+        f'fill="{tok["color.bg"]}" stroke="{tok["color.grid"]}" stroke-width="1.5"/>\n'
         f"{body}\n</svg>"
     )
 
 
 # --- Animation --------------------------------------------------------------
 
-HERO_NODES = 6
+HERO_NODES = 5
+STACK_GROUPS = 6
+TOOLS = 9
 SKYLINE_WEEKS = 52
 SKYLINE_WAVE = 0.03  # Versatz je Skyline-Säule (s): die Welle läuft in ca. 1,5 s durch
 
@@ -184,8 +192,8 @@ SKYLINE_WAVE = 0.03  # Versatz je Skyline-Säule (s): die Welle läuft in ca. 1,
 def boot_schedule(tok, nodes=HERO_NODES):
     """Zeitplan der Hero-Boot-Sequenz in Sekunden.
 
-    Liegt hier, damit nachfolgende Grafiken (z. B. Stack-Rack) erst nach dem
-    Hero-Boot starten und nie mehrere Grafiken gleichzeitig "hochfahren".
+    Liegt hier, damit nachfolgende Grafiken erst nach dem Hero-Boot und
+    nacheinander starten und nie mehrere gleichzeitig "hochfahren".
     """
     fast, base = secs(tok["motion.fast"]), secs(tok["motion.base"])
     step = secs(tok["motion.stagger"])
@@ -196,8 +204,11 @@ def boot_schedule(tok, nodes=HERO_NODES):
     t["sys"] = t["name"] + 7 * t["row_step"] + fast
     t["role"] = t["sys"] + base * 0.7
     t["end"] = t["role"] + fast
-    # Folge-Grafiken: Skyline-Welle, danach Terminal-Footer
-    t["skyline"] = t["end"] + base + fast
+    # Folge-Grafiken nacheinander: Bereiche, Tools, Skyline-Welle, Footer
+    t["stack"] = t["end"]
+    t["tools"] = t["stack"] + STACK_GROUPS * step + fast
+    t["tools_end"] = t["tools"] + TOOLS * step + fast
+    t["skyline"] = t["tools_end"]
     t["skyline_end"] = t["skyline"] + SKYLINE_WEEKS * SKYLINE_WAVE + fast
     return t
 
