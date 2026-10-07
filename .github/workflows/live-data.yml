@@ -1,0 +1,62 @@
+# Live-Daten fürs Profil: täglich Daten holen, alle Grafiken neu bauen,
+# prüfen und nur committen, wenn sich wirklich etwas geändert hat.
+
+# Anzeigename im Actions-Tab
+name: live-data
+
+on:
+  # Zeitplan in UTC: täglich um 04:23 (krumme Minute, weil zur vollen
+  # Stunde viele Workflows starten und sich verzögern)
+  schedule:
+    - cron: "23 4 * * *"
+  # Knopf "Run workflow" im Actions-Tab für manuelle Läufe
+  workflow_dispatch:
+
+# Minimale Rechte: nur Repo-Inhalte schreiben (für den Commit), sonst nichts
+permissions:
+  contents: write
+
+# Nie zwei Läufe gleichzeitig (sonst könnten sich Commits überholen)
+concurrency:
+  group: live-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    # Notbremse, falls etwas hängt
+    timeout-minutes: 10
+    steps:
+      # Repository-Inhalt auf den Runner holen
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Daten von der GitHub-API holen. Bei Fehlern bleibt der alte Stand
+      # in src/data/ erhalten (das Skript warnt nur, bricht nicht ab).
+      # PROFILE_TOKEN (optional, eigenes Secret) zählt private Beiträge mit,
+      # sonst wird das eingebaute Token des Workflows verwendet.
+      - name: Daten holen
+        run: python3 scripts/fetch.py
+        env:
+          PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
+          PROFILE_LOGIN: ${{ github.repository_owner }}
+
+      # Alle SVGs, Vorschau und README neu erzeugen. build.py führt am Ende
+      # die Prüfung aus und beendet sich mit Fehler, wenn etwas nicht stimmt
+      # -> dann stoppt der Lauf hier und es wird nichts committet.
+      - name: Bauen und prüfen
+        run: python3 scripts/build.py
+
+      # Nur generierte Dateien vormerken. Ohne Änderung: fertig, kein Commit.
+      - name: Committen, falls geändert
+        run: |
+          git add assets src/data README.md preview/index.html
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen – nichts zu committen."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: update live data"
+          git push
