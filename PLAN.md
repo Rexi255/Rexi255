@@ -72,12 +72,12 @@ Unter jeder Phase steht ein **Prompt**, den ich in Claude Code einfügen kann.
 
 **Ziel:** Tech-Stack als Teil der Szene statt Icon-Reihe.
 
-- [ ] Rack mit Einschüben, gruppiert: Netzwerk · Security · Server · Auth · Deployment · Privat
-- [ ] Jeder Einschub: Label in Monospace, Status-LED, dezente Lüfter-/Port-Details
-- [ ] Animation: LEDs gehen gestaffelt an, danach sehr ruhiges Ambient-Blinken
-- [ ] Daten kommen aus `tokens.json` (Skill-Liste), neue Skills = nur JSON ändern
-- [ ] Gleiche Breite und Perspektive wie Hero, damit beides optisch verschmilzt
-- [ ] Dark/Light, reduced motion, Budget ≤ 150 KB
+- [x] Rack mit Einschüben, gruppiert: Netzwerk · Security · Server · Auth · Deployment · Privat
+- [x] Jeder Einschub: Label in Monospace, Status-LED, dezente Lüfter-/Port-Details
+- [x] Animation: LEDs gehen gestaffelt an, danach sehr ruhiges Ambient-Blinken
+- [x] Daten kommen aus `tokens.json` (Skill-Liste), neue Skills = nur JSON ändern
+- [x] Gleiche Breite und Perspektive wie Hero, damit beides optisch verschmilzt
+- [x] Dark/Light, reduced motion, Budget ≤ 150 KB
 
 > **Prompt:** „Phase 3: Baue das Stack-Rack nach PLAN.md. Die Skills kommen aus tokens.json. Es muss direkt unter dem Hero wie eine Fortsetzung derselben Szene wirken. Zeig mir Hero und Stack untereinander als Screenshot.“
 

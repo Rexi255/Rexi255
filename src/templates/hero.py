@@ -14,7 +14,7 @@ schaltet die Animationen ab -> statisches Bild wie nach dem Boot.
 """
 
 import dotmatrix
-from _scene import (anim, circles, document, floor_grid, link, packet_shape, path_keyframes,
+from _scene import (anim, boot_schedule, circles, document, floor_grid, link, packet_shape, path_keyframes,
                     router, secs, server, style, switch)
 from svglib import Iso, num
 
@@ -48,15 +48,10 @@ def render(tok):
     step = secs(tok["motion.stagger"])
     rise = tok["grid.unit"]
 
-    # --- Zeitplan der Boot-Sequenz (Sekunden) ---
-    t_nodes = fast * 0.75
-    node_delay = [t_nodes + i * step for i in range(len(NODES))]
-    t_links = node_delay[-1] + fast * 0.5
-    t_name = t_links + step * 2
-    row_step = step / 2
-    t_sys = t_name + 7 * row_step + fast
-    t_role = t_sys + base * 0.7
-    t_ambient = t_role + fast
+    # --- Zeitplan der Boot-Sequenz (Sekunden), gemeinsam mit anderen Grafiken ---
+    t = boot_schedule(tok, len(NODES))
+    node_delay, t_links, t_name = t["nodes"], t["links"], t["name"]
+    row_step, t_sys, t_role, t_ambient = t["row_step"], t["sys"], t["role"], t["end"]
 
     css = [
         f"@keyframes fade {{ from {{ opacity: 0; }} }}",

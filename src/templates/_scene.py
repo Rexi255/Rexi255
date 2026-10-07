@@ -176,6 +176,27 @@ def document(tok, height, label, body, css=""):
 
 # --- Animation --------------------------------------------------------------
 
+HERO_NODES = 6
+
+
+def boot_schedule(tok, nodes=HERO_NODES):
+    """Zeitplan der Hero-Boot-Sequenz in Sekunden.
+
+    Liegt hier, damit nachfolgende Grafiken (z. B. Stack-Rack) erst nach dem
+    Hero-Boot starten und nie mehrere Grafiken gleichzeitig "hochfahren".
+    """
+    fast, base = secs(tok["motion.fast"]), secs(tok["motion.base"])
+    step = secs(tok["motion.stagger"])
+    t = {"nodes": [fast * 0.75 + i * step for i in range(nodes)]}
+    t["links"] = t["nodes"][-1] + fast * 0.5
+    t["name"] = t["links"] + step * 2
+    t["row_step"] = step / 2
+    t["sys"] = t["name"] + 7 * t["row_step"] + fast
+    t["role"] = t["sys"] + base * 0.7
+    t["end"] = t["role"] + fast
+    return t
+
+
 def secs(value):
     """Token-Zeit wie "0.4s" -> 0.4"""
     return float(str(value).rstrip("s"))
