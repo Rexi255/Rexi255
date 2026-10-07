@@ -25,6 +25,9 @@ import check
 import preview
 from svglib import Tokens
 
+# Templates dürfen gemeinsame Helfer aus src/templates/_*.py importieren
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src" / "templates"))
+
 ROOT = Path(__file__).resolve().parent.parent
 TOKENS = ROOT / "src" / "design" / "tokens.json"
 TEMPLATES = ROOT / "src" / "templates"

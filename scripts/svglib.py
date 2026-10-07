@@ -18,6 +18,9 @@ REDUCED_MOTION_CSS = (
     " }"
 )
 
+# Token-Gruppen mit je einem Block pro Theme
+THEMED = ("color", "shade")
+
 _PLACEHOLDER = re.compile(r"\{\{\s*([\w.-]+)\s*\}\}")
 
 
@@ -26,6 +29,7 @@ class Tokens:
 
     tok["color.accent"]  -> Farbe des aktuellen Themes
     tok["motion.base"]   -> "1.2s"
+    tok["shade.top"]     -> Farbe der Oberseite isometrischer Körper
     tok.theme            -> "dark" | "light"
     tok.raw              -> komplette tokens.json (z. B. für die Skill-Liste)
     """
@@ -34,8 +38,11 @@ class Tokens:
         self.raw = raw
         self.theme = theme
         flat = {}
-        _flatten({k: v for k, v in raw.items() if k != "color"}, "", flat)
+        _flatten({k: v for k, v in raw.items() if k not in THEMED}, "", flat)
         _flatten(raw["color"][theme], "color.", flat)
+        # shade.* verweist auf Palettennamen -> hier in Farben auflösen
+        for face, color_name in raw.get("shade", {}).get(theme, {}).items():
+            flat[f"shade.{face}"] = raw["color"][theme][color_name]
         flat["theme"] = theme
         self._flat = flat
 
@@ -111,3 +118,12 @@ class Iso:
             "left": self.points((x, y2, z), (x2, y2, z), (x2, y2, z2), (x, y2, z2)),
             "right": self.points((x2, y, z), (x2, y2, z), (x2, y2, z2), (x2, y, z2)),
         }
+
+
+def circles(centers, r):
+    """Viele gleich große Kreise als EIN Pfad (spart Bytes gegenüber <circle>)."""
+    d = num(2 * r)
+    return "".join(
+        f"M{num(x - r)} {num(y)}a{num(r)} {num(r)} 0 1 0 {d} 0a{num(r)} {num(r)} 0 1 0 -{d} 0"
+        for x, y in centers
+    )
