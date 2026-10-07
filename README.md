@@ -12,7 +12,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/stack-light.svg">
-    <img src="assets/stack-dark.svg" width="900" alt="Isometrisches Server-Rack mit 6 Einschüben und grünen Status-LEDs, jeder Einschub ist beschriftet: Netzwerk; Security: IT-Sicherheit; Server: Server-Administration, Linux; Auth: Authentifizierung &amp; Verzeichnisdienste; Deployment: Client-Deployment &amp; Geräteverwaltung, IT-Support; Privat: Homelab, Eigene Tools &amp; Skripte.">
+    <img src="assets/stack-dark.svg" width="900" alt="Schmales isometrisches Server-Rack mit 6 Einschüben und grünen Status-LEDs, jeder Einschub ist beschriftet: Netzwerk; Security: IT-Sicherheit; Server: Server-Administration, Linux; Auth: Authentifizierung &amp; Verzeichnisdienste; Deployment: Client-Deployment &amp; Geräteverwaltung, IT-Support; Privat: Homelab, Eigene Tools &amp; Skripte.">
   </picture>
 </p>
 

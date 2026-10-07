@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" width="900" height="640" role="img" aria-label="Isometrisches Server-Rack mit 6 Einschüben und grünen Status-LEDs, jeder Einschub ist beschriftet: Netzwerk; Security: IT-Sicherheit; Server: Server-Administration, Linux; Auth: Authentifizierung &amp; Verzeichnisdienste; Deployment: Client-Deployment &amp; Geräteverwaltung, IT-Support; Privat: Homelab, Eigene Tools &amp; Skripte.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 335" width="900" height="335" role="img" aria-label="Schmales isometrisches Server-Rack mit 6 Einschüben und grünen Status-LEDs, jeder Einschub ist beschriftet: Netzwerk; Security: IT-Sicherheit; Server: Server-Administration, Linux; Auth: Authentifizierung &amp; Verzeichnisdienste; Deployment: Client-Deployment &amp; Geräteverwaltung, IT-Support; Privat: Homelab, Eigene Tools &amp; Skripte.">
 <style>
 text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; font-size: 24px; }
 .t { fill: #2B2145; }
@@ -24,61 +24,61 @@ text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation M
 .hdr { fill: #A855F7; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
 </style>
-<rect x="1" y="1" width="898" height="638" rx="14" fill="#0C0915" stroke="#2B2145" stroke-width="1.5"/>
-<g><polygon class="l" points="46.86,584 109.22,620 109.22,104 46.86,68"/><polygon class="r" points="192.35,572 109.22,620 109.22,104 192.35,56"/><polygon class="t" points="130,20 192.35,56 109.22,104 46.86,68"/></g>
-<polygon class="p" points="187.16,117.2 114.41,159.2 114.41,108.8 187.16,66.8"/>
-<path class="ln" d="M159.1 125.6L119.61 148.4M159.1 116L119.61 138.8M159.1 106.4L119.61 129.2M159.1 96.8L119.61 119.6"/>
-<path class="off" d="M178.32 95.6a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0M171.05 99.8a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
-<path class="ok" style="animation: fade 0.4s steps(2) 4.04s backwards" d="M178.32 95.6a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
-<path class="acc" style="animation: fade 0.4s steps(2) 4.14s backwards" d="M171.05 99.8a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
-<path class="link" d="M200.35 89H236"/>
-<path class="acc" d="M233 89a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/>
-<polygon class="p" points="187.16,201.2 114.41,243.2 114.41,162.8 187.16,120.8"/>
-<path class="ln" d="M159.1 209.6L119.61 232.4M159.1 200L119.61 222.8M159.1 190.4L119.61 213.2M159.1 180.8L119.61 203.6M159.1 171.2L119.61 194M159.1 161.6L119.61 184.4M159.1 152L119.61 174.8"/>
-<path class="off" d="M178.32 164.6a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0M171.05 168.8a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
-<path class="ok" style="animation: fade 0.4s steps(2) 4.24s backwards" d="M178.32 164.6a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
-<path class="acc" style="animation: fade 0.4s steps(2) 4.34s backwards, blink 12s steps(1) 7.04s infinite" d="M171.05 168.8a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
-<path class="link" d="M200.35 158H236"/>
-<path class="acc" d="M233 158a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/>
-<polygon class="p" points="187.16,285.2 114.41,327.2 114.41,246.8 187.16,204.8"/>
-<path class="ln" d="M159.1 293.6L119.61 316.4M159.1 284L119.61 306.8M159.1 274.4L119.61 297.2M159.1 264.8L119.61 287.6M159.1 255.2L119.61 278M159.1 245.6L119.61 268.4M159.1 236L119.61 258.8"/>
-<path class="off" d="M178.32 248.6a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0M171.05 252.8a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
-<path class="ok" style="animation: fade 0.4s steps(2) 4.44s backwards" d="M178.32 248.6a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
-<path class="acc" style="animation: fade 0.4s steps(2) 4.54s backwards" d="M171.05 252.8a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
-<path class="link" d="M200.35 242H236"/>
-<path class="acc" d="M233 242a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/>
-<polygon class="p" points="187.16,369.2 114.41,411.2 114.41,330.8 187.16,288.8"/>
-<path class="ln" d="M159.1 377.6L119.61 400.4M159.1 368L119.61 390.8M159.1 358.4L119.61 381.2M159.1 348.8L119.61 371.6M159.1 339.2L119.61 362M159.1 329.6L119.61 352.4M159.1 320L119.61 342.8"/>
-<path class="off" d="M178.32 332.6a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0M171.05 336.8a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
-<path class="ok" style="animation: fade 0.4s steps(2) 4.64s backwards" d="M178.32 332.6a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
-<path class="acc" style="animation: fade 0.4s steps(2) 4.74s backwards" d="M171.05 336.8a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
-<path class="link" d="M200.35 326H236"/>
-<path class="acc" d="M233 326a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/>
-<polygon class="p" points="187.16,483.2 114.41,525.2 114.41,414.8 187.16,372.8"/>
-<path class="ln" d="M159.1 491.6L119.61 514.4M159.1 482L119.61 504.8M159.1 472.4L119.61 495.2M159.1 462.8L119.61 485.6M159.1 453.2L119.61 476M159.1 443.6L119.61 466.4M159.1 434L119.61 456.8M159.1 424.4L119.61 447.2M159.1 414.8L119.61 437.6M159.1 405.2L119.61 428"/>
-<path class="off" d="M178.32 431.6a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0M171.05 435.8a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
-<path class="ok" style="animation: fade 0.4s steps(2) 4.84s backwards" d="M178.32 431.6a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
-<path class="acc" style="animation: fade 0.4s steps(2) 4.94s backwards, blink 12s steps(1) 10.04s infinite" d="M171.05 435.8a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
-<path class="link" d="M200.35 425H236"/>
-<path class="acc" d="M233 425a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/>
-<polygon class="p" points="187.16,567.2 114.41,609.2 114.41,528.8 187.16,486.8"/>
-<path class="ln" d="M159.1 575.6L119.61 598.4M159.1 566L119.61 588.8M159.1 556.4L119.61 579.2M159.1 546.8L119.61 569.6M159.1 537.2L119.61 560M159.1 527.6L119.61 550.4M159.1 518L119.61 540.8"/>
-<path class="off" d="M178.32 530.6a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0M171.05 534.8a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
-<path class="ok" style="animation: fade 0.4s steps(2) 5.04s backwards" d="M178.32 530.6a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
-<path class="acc" style="animation: fade 0.4s steps(2) 5.14s backwards" d="M171.05 534.8a2.6 2.6 0 1 0 5.2 0a2.6 2.6 0 1 0 -5.2 0"/>
-<path class="link" d="M200.35 524H236"/>
-<path class="acc" d="M233 524a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/>
-<path class="edge-glow" d="M192.35 56L109.22 104"/>
-<text class="hdr" x="250" y="95.6">Netzwerk</text>
-<text class="hdr" x="250" y="149.6">Security</text>
-<text class="txt" x="250" y="179.6">IT-Sicherheit</text>
-<text class="hdr" x="250" y="233.6">Server</text>
-<text class="txt" x="250" y="263.6">Server-Administration · Linux</text>
-<text class="hdr" x="250" y="317.6">Auth</text>
-<text class="txt" x="250" y="347.6">Authentifizierung &amp; Verzeichnisdienste</text>
-<text class="hdr" x="250" y="401.6">Deployment</text>
-<text class="txt" x="250" y="431.6">Client-Deployment &amp; Geräteverwaltung</text>
-<text class="txt" x="250" y="461.6">IT-Support</text>
-<text class="hdr" x="250" y="515.6">Privat</text>
-<text class="txt" x="250" y="545.6">Homelab · Eigene Tools &amp; Skripte</text>
+<rect x="1" y="1" width="898" height="333" rx="14" fill="#0C0915" stroke="#2B2145" stroke-width="1.5"/>
+<g><polygon class="l" points="30,293.2 61.18,311.2 61.18,72 30,54"/><polygon class="r" points="113.14,281.2 61.18,311.2 61.18,72 113.14,42"/><polygon class="t" points="81.96,24 113.14,42 61.18,72 30,54"/></g>
+<polygon class="p" points="108.98,80.8 65.33,106 65.33,74.4 108.98,49.2"/>
+<path class="ln" d="M88.2 85.6L68.45 97M88.2 77.2L68.45 88.6M88.2 68.8L68.45 80.2"/>
+<path class="off" d="M101.38 68a2.4 2.4 0 1 0 4.8 0a2.4 2.4 0 1 0 -4.8 0M94.11 72.2a2.4 2.4 0 1 0 4.8 0a2.4 2.4 0 1 0 -4.8 0"/>
+<path class="ok" style="animation: fade 0.4s steps(2) 4.04s backwards" d="M101.38 68a2.4 2.4 0 1 0 4.8 0a2.4 2.4 0 1 0 -4.8 0"/>
+<path class="acc" style="animation: fade 0.4s steps(2) 4.14s backwards" d="M94.11 72.2a2.4 2.4 0 1 0 4.8 0a2.4 2.4 0 1 0 -4.8 0"/>
+<path class="link" d="M121.14 62.6H136"/>
+<path class="acc" d="M133 62.6a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/>
+<polygon class="p" points="108.98,114.8 65.33,140 65.33,108.4 108.98,83.2"/>
+<path class="ln" d="M88.2 119.6L68.45 131M88.2 111.2L68.45 122.6M88.2 102.8L68.45 114.2"/>
+<path class="off" d="M101.38 102a2.4 2.4 0 1 0 4.8 0a2.4 2.4 0 1 0 -4.8 0M94.11 106.2a2.4 2.4 0 1 0 4.8 0a2.4 2.4 0 1 0 -4.8 0"/>
+<path class="ok" style="animation: fade 0.4s steps(2) 4.24s backwards" d="M101.38 102a2.4 2.4 0 1 0 4.8 0a2.4 2.4 0 1 0 -4.8 0"/>
+<path class="acc" style="animation: fade 0.4s steps(2) 4.34s backwards, blink 12s steps(1) 7.04s infinite" d="M94.11 106.2a2.4 2.4 0 1 0 4.8 0a2.4 2.4 0 1 0 -4.8 0"/>
+<path class="link" d="M121.14 96.6H136"/>
+<path class="acc" d="M133 96.6a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/>
+<polygon class="p" points="108.98,148.8 65.33,174 65.33,142.4 108.98,117.2"/>
+<path class="ln" d="M88.2 153.6L68.45 165M88.2 145.2L68.45 156.6M88.2 136.8L68.45 148.2"/>
+<path class="off" d="M101.38 136a2.4 2.4 0 1 0 4.8 0a2.4 2.4 0 1 0 -4.8 0M94.11 140.2a2.4 2.4 0 1 0 4.8 0a2.4 2.4 0 1 0 -4.8 0"/>
+<path class="ok" style="animation: fade 0.4s steps(2) 4.44s backwards" d="M101.38 136a2.4 2.4 0 1 0 4.8 0a2.4 2.4 0 1 0 -4.8 0"/>
+<path class="acc" style="animation: fade 0.4s steps(2) 4.54s backwards" d="M94.11 140.2a2.4 2.4 0 1 0 4.8 0a2.4 2.4 0 1 0 -4.8 0"/>
+<path class="link" d="M121.14 130.6H136"/>
+<path class="acc" d="M133 130.6a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/>
+<polygon class="p" points="108.98,182.8 65.33,208 65.33,176.4 108.98,151.2"/>
+<path class="ln" d="M88.2 187.6L68.45 199M88.2 179.2L68.45 190.6M88.2 170.8L68.45 182.2"/>
+<path class="off" d="M101.38 170a2.4 2.4 0 1 0 4.8 0a2.4 2.4 0 1 0 -4.8 0M94.11 174.2a2.4 2.4 0 1 0 4.8 0a2.4 2.4 0 1 0 -4.8 0"/>
+<path class="ok" style="animation: fade 0.4s steps(2) 4.64s backwards" d="M101.38 170a2.4 2.4 0 1 0 4.8 0a2.4 2.4 0 1 0 -4.8 0"/>
+<path class="acc" style="animation: fade 0.4s steps(2) 4.74s backwards" d="M94.11 174.2a2.4 2.4 0 1 0 4.8 0a2.4 2.4 0 1 0 -4.8 0"/>
+<path class="link" d="M121.14 164.6H136"/>
+<path class="acc" d="M133 164.6a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/>
+<polygon class="p" points="108.98,244.8 65.33,270 65.33,210.4 108.98,185.2"/>
+<path class="ln" d="M88.2 249.6L68.45 261M88.2 241.2L68.45 252.6M88.2 232.8L68.45 244.2M88.2 224.4L68.45 235.8M88.2 216L68.45 227.4M88.2 207.6L68.45 219"/>
+<path class="off" d="M101.38 204a2.4 2.4 0 1 0 4.8 0a2.4 2.4 0 1 0 -4.8 0M94.11 208.2a2.4 2.4 0 1 0 4.8 0a2.4 2.4 0 1 0 -4.8 0"/>
+<path class="ok" style="animation: fade 0.4s steps(2) 4.84s backwards" d="M101.38 204a2.4 2.4 0 1 0 4.8 0a2.4 2.4 0 1 0 -4.8 0"/>
+<path class="acc" style="animation: fade 0.4s steps(2) 4.94s backwards, blink 12s steps(1) 10.04s infinite" d="M94.11 208.2a2.4 2.4 0 1 0 4.8 0a2.4 2.4 0 1 0 -4.8 0"/>
+<path class="link" d="M121.14 198.6H136"/>
+<path class="acc" d="M133 198.6a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/>
+<polygon class="p" points="108.98,278.8 65.33,304 65.33,272.4 108.98,247.2"/>
+<path class="ln" d="M88.2 283.6L68.45 295M88.2 275.2L68.45 286.6M88.2 266.8L68.45 278.2"/>
+<path class="off" d="M101.38 266a2.4 2.4 0 1 0 4.8 0a2.4 2.4 0 1 0 -4.8 0M94.11 270.2a2.4 2.4 0 1 0 4.8 0a2.4 2.4 0 1 0 -4.8 0"/>
+<path class="ok" style="animation: fade 0.4s steps(2) 5.04s backwards" d="M101.38 266a2.4 2.4 0 1 0 4.8 0a2.4 2.4 0 1 0 -4.8 0"/>
+<path class="acc" style="animation: fade 0.4s steps(2) 5.14s backwards" d="M94.11 270.2a2.4 2.4 0 1 0 4.8 0a2.4 2.4 0 1 0 -4.8 0"/>
+<path class="link" d="M121.14 260.6H136"/>
+<path class="acc" d="M133 260.6a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/>
+<path class="edge-glow" d="M113.14 42L61.18 72"/>
+<text class="hdr" x="150" y="68.76">Netzwerk</text>
+<text class="hdr" x="150" y="102.76">Security</text>
+<text class="txt" x="308.4" y="102.76">IT-Sicherheit</text>
+<text class="hdr" x="150" y="136.76">Server</text>
+<text class="txt" x="308.4" y="136.76">Server-Administration · Linux</text>
+<text class="hdr" x="150" y="170.76">Auth</text>
+<text class="txt" x="308.4" y="170.76">Authentifizierung &amp; Verzeichnisdienste</text>
+<text class="hdr" x="150" y="204.76">Deployment</text>
+<text class="txt" x="308.4" y="204.76">Client-Deployment &amp; Geräteverwaltung</text>
+<text class="txt" x="308.4" y="232.76">IT-Support</text>
+<text class="hdr" x="150" y="266.76">Privat</text>
+<text class="txt" x="308.4" y="266.76">Homelab · Eigene Tools &amp; Skripte</text>
 </svg>
