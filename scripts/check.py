@@ -116,7 +116,7 @@ def check_file(path, tokens):
     if root.tag != f"{{{SVG_NS}}}svg":
         errors.append(f"Wurzelelement ist {root.tag}, erwartet <svg> im SVG-Namespace")
     viewbox = (root.get("viewBox") or "").replace(",", " ").split()
-    width = tokens["canvas"]["width"]
+    width = tokens["canvas"]["card-width" if path.name.startswith("project-") else "width"]
     if len(viewbox) != 4 or float(viewbox[2]) != width:
         errors.append(f"viewBox muss {width} breit sein (ist: '{root.get('viewBox')}')")
 

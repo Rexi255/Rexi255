@@ -22,7 +22,9 @@ Der vollständige Umsetzungsplan steht in `PLAN.md`. Arbeite Phase für Phase un
   - IT-Support
   - Linux
 
-**Wichtig:** Keine Produkt- oder Markennamen und keine konkreten Details aus meinem Arbeitsumfeld verwenden (kein Arbeitgeber, keine Kunden, keine eingesetzten Systeme). Weder in der README noch in Grafiken, Alt-Texten oder Commit-Messages. Nur die allgemeinen Bereiche oben.
+- **Tools (freigegeben):** Claude, Claude Code, UniFi, Sophos, Python, Git, GitHub, Linux, Bash
+
+**Wichtig:** Produkt- und Markennamen sind erlaubt, aber **vor jeder Verwendung eines neuen Markennamens immer erst bei mir nachfragen** (bereits freigegeben: die Tools oben, Electron beim Berichtspiloten). Weiterhin tabu: Arbeitgeber, Kunden und konkrete Details aus meinem Arbeitsumfeld – weder in der README noch in Grafiken, Alt-Texten oder Commit-Messages.
 - **Projekte zum Hervorheben:**
   - [LF7-Projekt_GAS](https://github.com/BBZ-AIFS51/LF7-Projekt_GAS) – Schul-Teamprojekt: kleine Alarmanlage auf Mikrocontroller-Basis mit PIN-Feld, RFID und Bewegungsmelder, 3D-gedrucktem Gehäuse und interaktivem 3D-Modell im Browser
   - Berichtspilot – portable Electron-App für Ausbildungsnachweise (noch ohne Link)
@@ -88,6 +90,8 @@ Regel: **Lila dominiert.** `accent-glow` nur als Leuchtkern von Akzent-Elementen
 - Isometrisch, 30°-Projektion, durchgehend gleich in allen SVGs.
 - Einheitliches Raster (Basiseinheit in `tokens.json`).
 - Feste Breite im `viewBox`: **900 px** für alle Haupt-Grafiken, damit sie bündig untereinander stehen.
+- Ausnahme: Projektkarten (`project-*`) sind **440 px** breit und stehen zu zweit nebeneinander.
+- Jede Grafik ist eine Karte: abgerundeter Rahmen (`canvas.radius`), kompakte Höhe (ca. 220–320 px).
 
 ### Animation
 
