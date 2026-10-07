@@ -13,24 +13,27 @@ Der vollständige Umsetzungsplan steht in `PLAN.md`. Arbeite Phase für Phase un
 
 - **Name:** Jan
 - **Rolle:** Auszubildender Fachinformatiker für Systemintegration, 2. Lehrjahr
-- **Arbeitsumfeld:** IT-Dienstleister, Betreuung von Infrastruktur für Bildungseinrichtungen (Arbeitgeber nur nennen, wenn ich es freigebe)
-- **Schwerpunkte / Tech-Stack:**
-  - Netzwerk: UniFi, VLANs, WLAN
-  - Security: Sophos XGS Firewalls
-  - Server: Linux, Windows Server, Schulserver-Umgebungen (IServ)
-  - Auth: FreeRADIUS, Samba AD
-  - Deployment & Management: opsi, Relution MDM
-  - Ticketing: Zammad
-  - Privat: Arch Linux mit Hyprland
-- **Projekte zum Hervorheben:** `<z. B. Berichtspilot – portable Electron-App für IHK-Ausbildungsnachweise>`, `<weitere>`
-- **Kontakt/Links:** `<LinkedIn / Mail / Website – optional>`
+- **Schwerpunkte (nur allgemeine Bereiche):**
+  - Netzwerk
+  - IT-Sicherheit
+  - Server-Administration
+  - Authentifizierung & Verzeichnisdienste
+  - Client-Deployment & Geräteverwaltung
+  - IT-Support
+  - Linux
+
+**Wichtig:** Keine Produkt- oder Markennamen und keine konkreten Details aus meinem Arbeitsumfeld verwenden (kein Arbeitgeber, keine Kunden, keine eingesetzten Systeme). Weder in der README noch in Grafiken, Alt-Texten oder Commit-Messages. Nur die allgemeinen Bereiche oben.
+- **Projekte zum Hervorheben:**
+  - [LF7-Projekt_GAS](https://github.com/BBZ-AIFS51/LF7-Projekt_GAS) – Schul-Teamprojekt: kleine Alarmanlage auf Mikrocontroller-Basis mit PIN-Feld, RFID und Bewegungsmelder, 3D-gedrucktem Gehäuse und interaktivem 3D-Modell im Browser
+  - `<z. B. Berichtspilot – portable Electron-App für Ausbildungsnachweise>`
+  - `<weitere>`
+- **Kontakt/Links:** keine. Keine Kontakt-, Social- oder Mail-Links ins Profil einbauen.
 
 ---
 
 ## Kommunikation mit mir
 
 - Antworte auf **Deutsch**.
-- Ich lerne gerade: Erkläre jeden Shell-/Terminal-Befehl, den du ausführst oder mir vorschlägst, **Zeile für Zeile** in einem Satz.
 - Commit-Messages auf Englisch im Conventional-Commits-Stil (`feat:`, `fix:`, `chore:`, `docs:`).
 - Kleine, nachvollziehbare Commits. Ein Commit pro abgeschlossenem Schritt.
 - Bevor du etwas Größeres baust: kurz den Ansatz in 3–5 Sätzen nennen, dann umsetzen.
@@ -61,17 +64,18 @@ Aufbau der README von oben nach unten:
 
 | Token | Dark | Light | Verwendung |
 |---|---|---|---|
-| `bg` | `#0A0E14` | `#F6F8FA` | Hintergrund |
-| `surface` | `#111823` | `#FFFFFF` | Rack-Körper, Fenster |
-| `surface-2` | `#18212E` | `#EAEEF2` | Seitenflächen (isometrisch) |
-| `grid` | `#1F2A38` | `#D0D7DE` | Raster, Linien |
-| `accent` | `#00E5FF` | `#0077B6` | Die eine Akzentfarbe: Pakete, Highlights, Name |
-| `ok` | `#39FF88` | `#1A7F37` | Status-LEDs „online“ |
-| `warn` | `#FFB020` | `#9A6700` | Sparsam, max. 1–2 Stellen |
-| `text` | `#E6EDF3` | `#1F2328` | Primärtext |
-| `muted` | `#7D8590` | `#656D76` | Sekundärtext, Labels |
+| `bg` | `#0C0915` | `#FAF8FF` | Hintergrund |
+| `surface` | `#150F24` | `#FFFFFF` | Rack-Körper, Fenster |
+| `surface-2` | `#1E1633` | `#F0EAFB` | Seitenflächen (isometrisch) |
+| `grid` | `#2B2145` | `#DDD2F2` | Raster, Linien |
+| `accent` | `#A855F7` | `#7C3AED` | Die Hauptfarbe: Pakete, Highlights, Name |
+| `accent-glow` | `#D8B4FE` | `#A78BFA` | Heller Kern / Glow der Akzentfarbe, nur für Leuchteffekte |
+| `ok` | `#4ADE80` | `#15803D` | Status-LEDs „online“ |
+| `warn` | `#FBBF24` | `#A16207` | Sparsam, max. 1–2 Stellen |
+| `text` | `#EDE9FE` | `#1E1533` | Primärtext |
+| `muted` | `#8B81A8` | `#6B6385` | Sekundärtext, Labels |
 
-Regel: **Nur eine Akzentfarbe dominiert.** `ok`/`warn` sind kleine Signalpunkte, keine Flächen.
+Regel: **Lila dominiert.** `accent-glow` nur als Leuchtkern von Akzent-Elementen. `ok`/`warn` sind kleine Signalpunkte, keine Flächen. Hintergründe und Flächen sind leicht violett getönt, nicht neutral grau.
 
 ### Typografie
 
