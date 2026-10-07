@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 318" width="900" height="318" role="img" aria-label="Terminalfenster mit dem Profilstatus: last_update n/a, commits_this_week n/a, public_repos n/a, uptime since 2025.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 318" width="900" height="318" role="img" aria-label="Terminalfenster mit dem Profilstatus: last_update 2026-10-07, commits_this_week 8, public_repos 3, uptime since 2025.">
 <style>
 text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; font-size: 24px; }
 .t { fill: #2B2145; }
@@ -35,9 +35,9 @@ text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation M
 <circle class="off" cx="88" cy="42.0" r="6"/>
 <text class="mut" x="450.0" y="50.0" text-anchor="middle">rexi255@profile: ~</text>
 <text x="48" y="104" style="animation: fade 0.2s steps(1) 7.8s backwards"><tspan class="prompt">$</tspan><tspan class="txt"> ./status.sh</tspan></text>
-<text x="48" y="138" style="animation: fade 0.2s steps(1) 8s backwards"><tspan class="mut">last_update</tspan><tspan class="txt" x="321.6">n/a</tspan></text>
-<text x="48" y="172" style="animation: fade 0.2s steps(1) 8.2s backwards"><tspan class="mut">commits_this_week</tspan><tspan class="txt" x="321.6">n/a</tspan></text>
-<text x="48" y="206" style="animation: fade 0.2s steps(1) 8.4s backwards"><tspan class="mut">public_repos</tspan><tspan class="txt" x="321.6">n/a</tspan></text>
+<text x="48" y="138" style="animation: fade 0.2s steps(1) 8s backwards"><tspan class="mut">last_update</tspan><tspan class="txt" x="321.6">2026-10-07</tspan></text>
+<text x="48" y="172" style="animation: fade 0.2s steps(1) 8.2s backwards"><tspan class="mut">commits_this_week</tspan><tspan class="txt" x="321.6">8</tspan></text>
+<text x="48" y="206" style="animation: fade 0.2s steps(1) 8.4s backwards"><tspan class="mut">public_repos</tspan><tspan class="txt" x="321.6">3</tspan></text>
 <text x="48" y="240" style="animation: fade 0.2s steps(1) 8.6s backwards"><tspan class="mut">uptime</tspan><tspan class="txt" x="321.6">since 2025</tspan></text>
 <text x="48" y="274" style="animation: fade 0.2s steps(1) 8.8s backwards"><tspan class="prompt">$</tspan></text>
 <rect class="acc" x="76.8" y="254" width="14.4" height="24" style="animation: fade 0.2s steps(1) 8.8s backwards, cursor 1.2s steps(1) 9.2s infinite"/>
