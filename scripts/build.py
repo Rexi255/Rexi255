@@ -4,7 +4,7 @@ Aufruf (aus dem Repo-Wurzelverzeichnis):
     python3 scripts/build.py
 
 Ablauf:
-  1. src/design/tokens.json laden.
+  1. src/design/tokens.json und Live-Daten (src/data/github.json) laden.
   2. Jedes Template src/templates/<name>.py (ohne führendes "_") laden.
      Es muss eine Funktion render(tok) -> str enthalten.
   3. Für jedes Theme (dark, light) rendern und nach
@@ -18,6 +18,7 @@ Nur Python-Standardbibliothek.
 
 import importlib.util
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -33,6 +34,7 @@ ROOT = Path(__file__).resolve().parent.parent
 TOKENS = ROOT / "src" / "design" / "tokens.json"
 TEMPLATES = ROOT / "src" / "templates"
 ASSETS = ROOT / "assets"
+DATA = ROOT / "src" / "data" / "github.json"
 THEMES = ("dark", "light")
 
 
@@ -45,8 +47,18 @@ def load_template(path):
     return module
 
 
+def load_data():
+    """Live-Daten laden. PROFILE_DATA=pfad.json überschreibt (zum Testen)."""
+    path = Path(os.environ.get("PROFILE_DATA") or DATA)
+    if not path.exists():
+        print(f"  Hinweis: keine Live-Daten ({path.name}) – dynamische Grafiken zeigen Platzhalter")
+        return None
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
 def build_assets():
     raw = json.loads(TOKENS.read_text(encoding="utf-8"))
+    data = load_data()
     ASSETS.mkdir(exist_ok=True)
     written = set()
 
@@ -55,7 +67,7 @@ def build_assets():
             continue
         template = load_template(path)
         for theme in THEMES:
-            svg = template.render(Tokens(raw, theme)).strip() + "\n"
+            svg = template.render(Tokens(raw, theme, data)).strip() + "\n"
             out = ASSETS / f"{path.stem}-{theme}.svg"
             out.write_text(svg, encoding="utf-8", newline="\n")
             written.add(out.name)

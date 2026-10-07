@@ -32,11 +32,13 @@ class Tokens:
     tok["shade.top"]     -> Farbe der Oberseite isometrischer Körper
     tok.theme            -> "dark" | "light"
     tok.raw              -> komplette tokens.json (z. B. für die Skill-Liste)
+    tok.data             -> Live-Daten (dict) oder None, wenn noch keine da sind
     """
 
-    def __init__(self, raw, theme):
+    def __init__(self, raw, theme, data=None):
         self.raw = raw
         self.theme = theme
+        self.data = data  # Live-Daten aus src/data/github.json oder None
         flat = {}
         _flatten({k: v for k, v in raw.items() if k not in THEMED}, "", flat)
         _flatten(raw["color"][theme], "color.", flat)
