@@ -104,26 +104,27 @@ Unter jeder Phase steht ein **Prompt**, den ich in Claude Code einfügen kann.
 **Ziel:** Das Profil lebt und aktualisiert sich selbst.
 
 ### 5a – Daten holen
-- [ ] Fetch-Skript: Contribution-Kalender der letzten 52 Wochen, Commits diese Woche, Anzahl öffentlicher Repos
-- [ ] Ergebnis als JSON in `src/data/`
-- [ ] Fehlerfall: alter Stand bleibt erhalten
+- [x] Fetch-Skript: Contribution-Kalender der letzten 52 Wochen, Commits diese Woche, Anzahl öffentlicher Repos
+- [x] Ergebnis als JSON in `src/data/`
+- [x] Fehlerfall: alter Stand bleibt erhalten
 
 ### 5b – Skyline
-- [ ] Isometrische Skyline: eine Säule pro Woche, Höhe = Contributions
-- [ ] Animation: Säulen wachsen einmal gestaffelt von links nach rechts, danach ruhig
-- [ ] Höchste Woche dezent mit `accent` markiert
-- [ ] Dark/Light, reduced motion, Budget
+- [x] Isometrische Skyline: eine Säule pro Woche, Höhe = Contributions
+- [x] Animation: Säulen wachsen einmal gestaffelt von links nach rechts, danach ruhig
+- [x] Höchste Woche dezent mit `accent` markiert
+- [x] Dark/Light, reduced motion, Budget
 
 ### 5c – Terminal-Footer
-- [ ] Kleines Terminalfenster, Zeilen erscheinen nacheinander
-- [ ] Inhalte z. B.: `last_update`, `commits_this_week`, `repos`, ein kleiner Gag wie `uptime: since 2025`
-- [ ] Blinkender Cursor am Ende
+- [x] Kleines Terminalfenster, Zeilen erscheinen nacheinander
+- [x] Inhalte z. B.: `last_update`, `commits_this_week`, `repos`, ein kleiner Gag wie `uptime: since 2025`
+- [x] Blinkender Cursor am Ende
 
 ### 5d – GitHub Action
-- [ ] Workflow: täglich + manuell auslösbar
-- [ ] Ablauf: Daten holen → generieren → prüfen → nur bei Änderung committen
-- [ ] Minimale Rechte (`contents: write`)
-- [ ] Einmal manuell ausgelöst und Ergebnis auf dem Profil geprüft
+- [x] Workflow: täglich + manuell auslösbar
+- [x] Ablauf: Daten holen → generieren → prüfen → nur bei Änderung committen
+- [x] Minimale Rechte (`contents: write`)
+- [x] Einmal manuell ausgelöst und Ergebnis auf dem Profil geprüft
+  - Lauf #1 erfolgreich, Bot-Commit `chore: update live data` mit echten Daten (eingebautes Token). Optik auf dem echten Profil bitte selbst ansehen.
 
 > **Prompt:** „Phase 5: Setze 5a bis 5d nacheinander um. Nach jedem Teilschritt kurz zeigen, was funktioniert. Erkläre mir den Workflow (YAML) Zeile für Zeile.“
 
