@@ -3,7 +3,7 @@
 // Aufruf: node scripts/shoot.mjs jobs.json
 // jobs.json: { "executablePath": "...optional...", "jobs": [
 //   { "url": "file:///...", "out": "/.../x.png", "width": 900, "height": 480,
-//     "at": 6000, "reduced": false } ] }
+//     "at": 6000, "reduced": false, "colorScheme": "dark" (optional) } ] }
 //
 // Jede Seite wird geladen, dann wird "at" Millisekunden echte Zeit gewartet.
 // Mehrere Jobs laufen parallel in einem Browser.
@@ -28,7 +28,10 @@ async function worker() {
       viewport: { width: job.width, height: job.height },
       deviceScaleFactor: 1,
     });
-    await page.emulateMedia({ reducedMotion: job.reduced ? "reduce" : "no-preference" });
+    await page.emulateMedia({
+      reducedMotion: job.reduced ? "reduce" : "no-preference",
+      colorScheme: job.colorScheme || "no-preference",
+    });
     await page.goto(job.url, { waitUntil: "load" });
     await page.waitForTimeout(job.at);
     await page.screenshot({ path: job.out });

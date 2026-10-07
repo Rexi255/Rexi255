@@ -87,12 +87,13 @@ Unter jeder Phase steht ein **Prompt**, den ich in Claude Code einfügen kann.
 
 **Ziel:** Die eigentliche Seite zusammensetzen.
 
-- [ ] Layout: Hero → Stack → Text → Projekte → (Platzhalter Skyline) → (Platzhalter Footer)
-- [ ] Alle Grafiken per `<picture>` mit Dark/Light, zentriert, mit Alt-Text
-- [ ] Text-Block: 2–4 Sätze über mich, echtes Markdown, kein Bild
-- [ ] Featured Projects: kurze Liste mit Einzeiler pro Projekt
-- [ ] Links/Kontakt dezent, im Stil der Seite
+- [x] Layout: Hero → Stack → Text → Projekte → (Platzhalter Skyline) → (Platzhalter Footer)
+- [x] Alle Grafiken per `<picture>` mit Dark/Light, zentriert, mit Alt-Text
+- [x] Text-Block: 2–4 Sätze über mich, echtes Markdown, kein Bild
+- [x] Featured Projects: kurze Liste mit Einzeiler pro Projekt
+- [x] ~~Links/Kontakt dezent, im Stil der Seite~~ – entfällt, laut CLAUDE.md keine Kontakt-Links
 - [ ] Auf GitHub gepusht und echtes Profil in Dark **und** Light Mode angeschaut
+  - Gepusht ✅, GitHub rendert beide `<picture>` mit Alt-Texten ✅ (per HTML geprüft). Optik nur lokal nachgestellt – echtes Profil bitte selbst in Dark und Light ansehen.
 
 > **Prompt:** „Phase 4: Setze die README.md nach PLAN.md zusammen. Text-Entwürfe für ‚Über mich‘ und die Projekte schlägst du mir vor, ich entscheide. Keine Inhalte erfinden.“
 
