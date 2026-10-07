@@ -1,6 +1,6 @@
 # CLAUDE.md – GitHub-Profil-README
 
-Dieses Repo ist das Profil-Repository von **<GITHUB_USERNAME>**. Die `README.md` wird als Startseite des GitHub-Profils angezeigt.
+Dieses Repo ist das Profil-Repository von **Rexi255**. Die `README.md` wird als Startseite des GitHub-Profils angezeigt.
 Ziel: Ein Profil, das beim ersten Blick hängen bleibt. Kein Widget-Sammelsurium, sondern eine durchgestaltete Szene aus eigenen, animierten SVGs.
 
 Der vollständige Umsetzungsplan steht in `PLAN.md`. Arbeite Phase für Phase und hake dort ab, was erledigt ist.
