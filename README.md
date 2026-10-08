@@ -6,7 +6,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg">
-    <img src="assets/hero-dark.svg" width="900" alt="Rexi255 in leuchtender Punktschrift. Jan, Azubi Fachinformatiker für Systemintegration. Netzwerk, IT-Sicherheit, Server &amp; Linux/Windows. Bereiche: Netzwerk; Security: IT-Sicherheit; Server: Server-Administration, Linux; Auth: Authentifizierung &amp; Verzeichnisdienste; Deployment: Client-Deployment &amp; Geräteverwaltung, IT-Support; Privat: Homelab, Eigene Tools &amp; Skripte. Rechts ein isometrisches Server-Rack, dessen untere Einschübe mit grünen LEDs zu den Bereichen gehören; system online.">
+    <img src="assets/hero-dark.svg" width="900" alt="Rexi255 in leuchtender Punktschrift. Jan, Azubi Fachinformatiker für Systemintegration. Netzwerk, IT-Sicherheit, Server &amp; Linux – beruflich und im eigenen Homelab. Bereiche: Netzwerk; Security: IT-Sicherheit; Server: Server-Administration, Linux; Auth: Authentifizierung &amp; Verzeichnisdienste; Deployment: Client-Deployment &amp; Geräteverwaltung, IT-Support; Privat: Homelab, Eigene Tools &amp; Skripte. Rechts ein isometrisches Server-Rack, dessen untere Einschübe mit grünen LEDs zu den Bereichen gehören; system online.">
   </picture>
 </p>
 
@@ -37,7 +37,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/skyline-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/skyline-light.svg">
-    <img src="assets/skyline-dark.svg" width="900" alt="Isometrische Skyline aus 52 Säulen, eine pro Woche: 28 Contributions im letzten Jahr, die stärkste Woche (12) ist hervorgehoben.">
+    <img src="assets/skyline-dark.svg" width="900" alt="Isometrische Skyline aus 52 Säulen, eine pro Woche: 31 Contributions im letzten Jahr, die stärkste Woche (13) ist hervorgehoben.">
   </picture>
 </p>
 
@@ -45,6 +45,6 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/footer-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/footer-light.svg">
-    <img src="assets/footer-dark.svg" width="900" alt="Terminalfenster mit dem Profilstatus: last_update 2026-10-07, commits_this_week 8, public_repos 3, uptime since 2025.">
+    <img src="assets/footer-dark.svg" width="900" alt="Terminalfenster mit dem Profilstatus: last_update 2026-10-08, commits_this_week 9, public_repos 3, uptime since 2025.">
   </picture>
 </p>
