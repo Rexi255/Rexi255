@@ -45,6 +45,6 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/footer-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/footer-light.svg">
-    <img src="assets/footer-dark.svg" width="900" alt="Terminalfenster mit dem Profilstatus: last_update 2026-10-09, commits_this_week 9, public_repos 3, uptime since 2025.">
+    <img src="assets/footer-dark.svg" width="900" alt="Terminalfenster mit dem Profilstatus: last_update 2026-10-10, commits_this_week 9, public_repos 3, uptime since 2025.">
   </picture>
 </p>
