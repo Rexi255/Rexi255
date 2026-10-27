@@ -37,7 +37,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/skyline-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/skyline-light.svg">
-    <img src="assets/skyline-dark.svg" width="900" alt="Isometrische Skyline aus 52 Säulen, eine pro Woche: 93 Contributions im letzten Jahr, die stärkste Woche (50) ist hervorgehoben.">
+    <img src="assets/skyline-dark.svg" width="900" alt="Isometrische Skyline aus 52 Säulen, eine pro Woche: 94 Contributions im letzten Jahr, die stärkste Woche (50) ist hervorgehoben.">
   </picture>
 </p>
 
@@ -45,6 +45,6 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/footer-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/footer-light.svg">
-    <img src="assets/footer-dark.svg" width="900" alt="Terminalfenster mit dem Profilstatus: last_update 2026-10-26, commits_this_week 0, public_repos 3, uptime since 2025.">
+    <img src="assets/footer-dark.svg" width="900" alt="Terminalfenster mit dem Profilstatus: last_update 2026-10-27, commits_this_week 1, public_repos 3, uptime since 2025.">
   </picture>
 </p>
